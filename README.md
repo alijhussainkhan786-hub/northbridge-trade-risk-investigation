@@ -4,6 +4,10 @@ A fictional, end-to-end cross-border trade risk investigation demonstrating rela
 
 **This is a synthetic project.** No real entity, individual, or organisation is described anywhere in this repository. No confidential, government, law-enforcement, or intelligence material was used at any stage. See `docs/limitations_and_ethical_use.md`.
 
+## Live Interactive Dashboard
+
+Explore the investigation dashboard: [Open the Northbridge Trade Risk Dashboard](https://alijhussainkhan786-hub.github.io/northbridge-trade-risk-investigation/dashboard/dashboard.html)
+
 ## Portfolio Scale
 6,000 transactions (GBP 7.84B total invoice value), 180 customers, 260 counterparties, 45 intermediaries, 2022-01-01 to 2024-12-31. Portfolio alert rate 16.0%, claim rate 3.0%. Full baseline: `outputs/stage4_sql_investigation/`.
 
