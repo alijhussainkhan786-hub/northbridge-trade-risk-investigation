@@ -1,0 +1,7 @@
+segment,has_alert,n_txn,n_claims,claim_rate_pct
+Corporate,0,306,4,1.31
+Corporate,1,46,1,2.17
+Mid-market,0,1467,36,2.45
+Mid-market,1,271,24,8.86
+SME,0,3267,68,2.08
+SME,1,643,47,7.31

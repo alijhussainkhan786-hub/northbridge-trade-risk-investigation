@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northbridge Investigation Triage Dashboard</title>
+<style>
+  :root{
+    --ink:#20242b;
+    --paper:#f1eee6;
+    --paper-raised:#faf8f3;
+    --slate:#6b6558;
+    --line:#c9c2b2;
+    --amber:#a9762f;
+    --amber-bg:#f2e4d0;
+    --sage:#5c7a5c;
+    --sage-bg:#e3eadf;
+    --grey:#7a7568;
+    --grey-bg:#e7e4dc;
+    --mono:'Courier New', Consolas, monospace;
+    --serif:Georgia, 'Times New Roman', serif;
+    --sans:-apple-system, 'Segoe UI', system-ui, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--paper); color:var(--ink);
+    font-family:var(--sans); font-size:15px; line-height:1.5;
+  }
+  a{color:var(--amber);}
+  .app{display:flex; min-height:100vh;}
+
+  /* --- Folder-tab rail --- */
+  .rail{
+    width:200px; flex:none; background:var(--ink); color:var(--paper);
+    padding:24px 0; position:sticky; top:0; height:100vh; overflow-y:auto;
+  }
+  .rail .brand{
+    font-family:var(--serif); font-size:15px; letter-spacing:.03em;
+    padding:0 18px 18px 18px; border-bottom:1px solid #3a3f47; margin-bottom:10px;
+  }
+  .rail .brand small{display:block; color:#a9a290; font-family:var(--sans); font-size:11px; margin-top:4px;}
+  .tab{
+    display:block; width:100%; text-align:left; background:none; border:none;
+    color:#cfc9ba; font-family:var(--sans); font-size:13px; padding:11px 18px;
+    cursor:pointer; border-left:3px solid transparent;
+  }
+  .tab .num{font-family:var(--mono); color:#8b8570; margin-right:8px;}
+  .tab:hover{background:#2a2f37;}
+  .tab.active{background:var(--paper); color:var(--ink); border-left:3px solid var(--amber);}
+  .tab.active .num{color:var(--amber);}
+
+  /* --- Content --- */
+  .content{flex:1; padding:28px 40px 60px 40px; max-width:1180px;}
+  .banner{
+    background:var(--ink); color:var(--paper-raised); font-family:var(--mono);
+    font-size:12px; padding:10px 16px; border-radius:2px; margin-bottom:22px;
+    letter-spacing:.02em;
+  }
+  h1{font-family:var(--serif); font-size:26px; margin:0 0 4px 0; font-weight:normal;}
+  .subhead{color:var(--slate); font-size:13px; margin-bottom:26px;}
+  h2{font-family:var(--serif); font-size:18px; font-weight:normal; margin:32px 0 12px 0; border-bottom:1px solid var(--line); padding-bottom:6px;}
+  h3{font-family:var(--serif); font-size:15px; font-weight:normal; margin:20px 0 8px 0;}
+
+  .kpi-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:10px;}
+  .kpi{background:var(--paper-raised); border:1px solid var(--line); padding:14px 16px; border-radius:2px;}
+  .kpi .val{font-family:var(--serif); font-size:24px;}
+  .kpi .label{font-size:11.5px; color:var(--slate); margin-top:2px;}
+  .kpi .def{font-size:10.5px; color:#9c9585; margin-top:6px; border-top:1px dotted var(--line); padding-top:6px;}
+
+  table{width:100%; border-collapse:collapse; font-size:13px; background:var(--paper-raised);}
+  th{text-align:left; font-family:var(--sans); font-weight:600; font-size:11.5px; text-transform:uppercase;
+     letter-spacing:.03em; color:var(--slate); border-bottom:1px solid var(--ink); padding:8px 10px;}
+  td{padding:9px 10px; border-bottom:1px solid var(--line); vertical-align:top;}
+  tr:last-child td{border-bottom:none;}
+  .mono{font-family:var(--mono); font-size:12.5px;}
+
+  .badge{display:inline-block; padding:2px 9px; border-radius:2px; font-size:11.5px; font-family:var(--sans); font-weight:600;}
+  .badge.high{background:var(--amber-bg); color:var(--amber);}
+  .badge.medium{background:var(--grey-bg); color:var(--grey);}
+  .badge.data{background:#e0e6ea; color:#3f5a6b;}
+  .badge.cleared{background:var(--sage-bg); color:var(--sage);}
+  .badge.carry{background:var(--sage-bg); color:var(--sage);}
+  .badge.capped{background:var(--grey-bg); color:var(--grey);}
+  .badge.more{background:#e0e6ea; color:#3f5a6b;}
+
+  .note{background:var(--paper-raised); border-left:3px solid var(--amber); padding:10px 14px; font-size:12.5px; margin:12px 0; color:#4a4636;}
+  .note.sage{border-left-color:var(--sage);}
+  .note.grey{border-left-color:var(--grey);}
+  .footnote{font-size:11px; color:var(--slate); font-family:var(--mono); margin-top:6px;}
+  .evidence-pair{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:10px 0;}
+  .evidence-pair .col{background:var(--paper-raised); border:1px solid var(--line); padding:10px 12px; font-size:12.5px;}
+  .evidence-pair .col h4{margin:0 0 6px 0; font-size:11.5px; text-transform:uppercase; letter-spacing:.03em; color:var(--slate);}
+
+  .bar-row{display:flex; align-items:center; gap:10px; margin:5px 0; font-size:12px;}
+  .bar-label{width:190px; flex:none; color:var(--slate);}
+  .bar-track{flex:1; background:var(--grey-bg); border-radius:2px; height:14px; overflow:hidden;}
+  .bar-fill{background:var(--amber); height:100%;}
+  .bar-fill.sage{background:var(--sage);}
+  .bar-val{width:46px; flex:none; text-align:right; font-family:var(--mono); font-size:11.5px;}
+
+  .stamp{
+    position:fixed; top:18px; right:26px; border:2px solid var(--amber); color:var(--amber);
+    font-family:var(--mono); font-size:11px; padding:6px 10px; transform:rotate(4deg);
+    letter-spacing:.05em; background:rgba(255,255,255,.5); pointer-events:none;
+  }
+  .cluster-diagram{display:flex; gap:40px; margin:16px 0; flex-wrap:wrap;}
+  .cluster-box{border:1px solid var(--line); background:var(--paper-raised); padding:14px 18px; min-width:280px;}
+  .cluster-box .cust-node{font-family:var(--mono); font-size:13px; background:var(--ink); color:var(--paper); display:inline-block; padding:4px 10px; border-radius:2px; margin-bottom:10px;}
+  .cluster-box .cpty-node{font-family:var(--mono); font-size:12px; display:inline-block; padding:3px 8px; margin:3px 4px 3px 0; border:1px solid var(--amber); border-radius:2px; color:var(--amber);}
+  .cluster-box .edge-label{font-size:11px; color:var(--slate); margin-top:8px;}
+
+  .qa-item{display:flex; gap:10px; align-items:flex-start; margin:8px 0; font-size:13px;}
+  .qa-check{font-family:var(--mono); color:var(--sage); font-weight:700;}
+  .page{display:none;}
+  .page.active{display:block;}
+</style>
+</head>
+<body>
+<div class="stamp">FICTIONAL &mdash; PORTFOLIO PROJECT</div>
+<div class="app">
+  <nav class="rail">
+    <div class="brand">Northbridge<br>Trade Integrity<small>Investigation Triage Dashboard</small></div>
+    <button class="tab active" data-page="p1"><span class="num">01</span>Landing / Baseline</button>
+    <button class="tab" data-page="p2"><span class="num">02</span>Priority Cases</button>
+    <button class="tab" data-page="p3"><span class="num">03</span>Case Detail</button>
+    <button class="tab" data-page="p4"><span class="num">04</span>Claim-Control Status</button>
+    <button class="tab" data-page="p5"><span class="num">05</span>Network &amp; Clusters</button>
+    <button class="tab" data-page="p6"><span class="num">06</span>Evidence Gaps &amp; DQ</button>
+    <button class="tab" data-page="p7"><span class="num">07</span>Methodology &amp; Limitations</button>
+  </nav>
+
+  <main class="content">
+    <div class="banner">This is a fictional portfolio project. All entities are synthetic. No finding constitutes evidence of wrongdoing. Priority = review first, not confirmed.</div>
+
+    <!-- PAGE 1: LANDING / BASELINE -->
+    <section class="page active" id="p1">
+      <h1>Portfolio Baseline</h1>
+      <div class="subhead">Northbridge Trade Finance &amp; Insurance Group &mdash; fictional cross-border trade portfolio, 2022&ndash;2024</div>
+
+      <div class="kpi-grid">
+        <div class="kpi"><div class="val">6,000</div><div class="label">Total transactions</div><div class="def">Grain: 1 row = 1 transaction. Source: Stage 4 baseline.</div></div>
+        <div class="kpi"><div class="val">&pound;7.84B</div><div class="label">Total portfolio value</div><div class="def">SUM(invoice_value). Highly right-skewed &mdash; median &pound;36k.</div></div>
+        <div class="kpi"><div class="val">16.0%</div><div class="label">Portfolio alert rate</div><div class="def">960 alerts / 6,000 transactions.</div></div>
+        <div class="kpi"><div class="val">3.0%</div><div class="label">Portfolio claim rate</div><div class="def">180 claims / 6,000 transactions.</div></div>
+        <div class="kpi"><div class="val">2</div><div class="label">EDD-referral cases open</div><div class="def">Case A (CUST00135) &amp; Case B (CUST00070). See Priority Cases.</div></div>
+        <div class="kpi"><div class="val">1</div><div class="label">Case requires more data</div><div class="def">Case C &mdash; value/weight set, pending specialist review.</div></div>
+        <div class="kpi"><div class="val">2</div><div class="label">Cleared as likely benign</div><div class="def">INTM00038 (hub) &amp; CL003 (duplicate cluster).</div></div>
+        <div class="kpi"><div class="val">12</div><div class="label">Data-quality issues logged</div><div class="def">Stage 3 register, severity-rated, none silently corrected.</div></div>
+      </div>
+
+      <h2>Alert Rate by Corridor <span style="font-size:11px;color:var(--slate);font-family:var(--sans);font-weight:normal;">&mdash; descriptive, not a risk ranking</span></h2>
+      <div id="corridorBars"></div>
+
+      <h2>Alert Rate by Product Category (top 8) <span style="font-size:11px;color:var(--slate);font-family:var(--sans);font-weight:normal;">&mdash; descriptive, not a risk ranking</span></h2>
+      <div id="productBars"></div>
+
+      <h2>Portfolio Baseline by Segment</h2>
+      <table id="segmentTable"></table>
+    </section>
+
+    <!-- PAGE 2: PRIORITY CASES -->
+    <section class="page" id="p2">
+      <h1>Priority Cases</h1>
+      <div class="subhead">Review-ordering table. Priority band = review first, not a finding.</div>
+      <table id="priorityTable"></table>
+      <p class="footnote">Source: stage7_outputs/7c_priority_*_level.csv, stage9_outputs/9b_claim_control_register.csv. No raw transaction table connected.</p>
+
+      <h2>Indicator Contribution by Case</h2>
+      <div id="indicatorBars"></div>
+      <p class="footnote">Each indicator capped per Stage 7 weighting framework &mdash; see Methodology page for full indicator dictionary reference.</p>
+    </section>
+
+    <!-- PAGE 3: CASE DETAIL -->
+    <section class="page" id="p3">
+      <h1>Case Detail</h1>
+      <div class="subhead">Full evidentiary view for each priority case. Evidence and alternative explanation always shown together.</div>
+      <div id="caseDetails"></div>
+    </section>
+
+    <!-- PAGE 4: CLAIM-CONTROL STATUS -->
+    <section class="page" id="p4">
+      <h1>Claim-Control Status</h1>
+      <div class="subhead">All major analytical claims re-tested per the Stage 9 Claim-Control Gate before appearing here.</div>
+      <table id="claimTable"></table>
+    </section>
+
+    <!-- PAGE 5: NETWORK & CLUSTER SUMMARY -->
+    <section class="page" id="p5">
+      <h1>Network &amp; Cluster Summary</h1>
+      <div class="subhead">Only the two named candidate clusters are diagrammed. No portfolio-wide network view is shown, to avoid implying universal review.</div>
+
+      <h2>Entity-Resolution Classification (all counterparty pairs, 260 counterparties)</h2>
+      <table id="erTable"></table>
+
+      <h2>Candidate Clusters</h2>
+      <div class="cluster-diagram">
+        <div class="cluster-box">
+          <div class="cust-node">CUST00135</div>
+          <div style="font-size:11px;color:var(--slate);">100% of 38 txns (&pound;14.4M) &mdash; exclusively with:</div>
+          <div style="margin-top:8px;">
+            <span class="cpty-node">CPTY00002</span><span class="cpty-node">CPTY00045</span>
+            <span class="cpty-node">CPTY00148</span><span class="cpty-node">CPTY00156</span>
+          </div>
+          <div class="edge-label">Linking attribute: shared bank_account_hash + registered_address (2/6 pairs also declared shared_director, source: regulatory_filing)</div>
+        </div>
+        <div class="cluster-box">
+          <div class="cust-node">CUST00070</div>
+          <div style="font-size:11px;color:var(--slate);">100% of 37 txns (&pound;14.0M) &mdash; exclusively with:</div>
+          <div style="margin-top:8px;">
+            <span class="cpty-node">CPTY00073</span><span class="cpty-node">CPTY00141</span>
+            <span class="cpty-node">CPTY00218</span><span class="cpty-node">CPTY00220</span>
+          </div>
+          <div class="edge-label">Linking attribute: shared bank_account_hash + registered_address (1/6 pairs also declared parent_subsidiary, source: declared/self-reported)</div>
+        </div>
+      </div>
+      <p class="footnote">Node proximity reflects the specific documented attribute labelled on each diagram. It does not imply relationship strength or common control beyond that attribute.</p>
+
+      <h2 style="margin-top:36px;">Intermediary Hub Clearance &mdash; INTM00038</h2>
+      <div class="note sage">
+        <strong>Cleared as likely benign.</strong> High volume alone was tested and did not meet the bar for review priority.
+      </div>
+      <div class="evidence-pair">
+        <div class="col"><h4>Concentration observed</h4>
+          66.5% of all distinct linked transactions (3,360 of ~5,050). Highest network centrality of any intermediary in the portfolio.
+        </div>
+        <div class="col"><h4>Why it is not flagged</h4>
+          Own alert rate 16.01% and claim rate 3.04% &mdash; statistically indistinguishable from portfolio baseline (16.0% / 3.0%). Touches all 180 customers and all 260 counterparties (maximum possible diversity). No entity-resolution cluster membership.
+        </div>
+      </div>
+      <p class="footnote">This clearance is not permanent. It would be revisited if this intermediary's own alert/claim rate rose above baseline, or if its client base narrowed toward a flagged cluster.</p>
+    </section>
+
+    <!-- PAGE 6: EVIDENCE GAPS & DATA QUALITY -->
+    <section class="page" id="p6">
+      <h1>Evidence Gaps &amp; Data Quality</h1>
+      <div class="subhead">Open intelligence/analytical gaps, and the Stage 3 data-quality issue register.</div>
+      <h2>Evidence-Gap Register</h2>
+      <table id="gapTable"></table>
+
+      <h2>Data-Quality Issue Register (Stage 3, logged Stage 4)</h2>
+      <table id="dqTable"></table>
+    </section>
+
+    <!-- PAGE 7: METHODOLOGY & LIMITATIONS -->
+    <section class="page" id="p7">
+      <h1>Methodology &amp; Limitations</h1>
+      <h2>What this dashboard is</h2>
+      <p>A review-prioritisation tool built on a 12-stage fictional investigation methodology: brief &rarr; data model &rarr; synthetic data generation &rarr; data audit &rarr; SQL investigation &rarr; Python behavioural analysis &rarr; entity resolution/network analysis &rarr; explainable prioritisation framework &rarr; case files &rarr; claim-control gate &rarr; this dashboard.</p>
+
+      <h2>What this dashboard is not</h2>
+      <ul>
+        <li>Not a determination-of-wrongdoing tool. No entity anywhere in this project is described as having committed an offense.</li>
+        <li>Not a black-box score. Every priority band traces to a named, capped, documented indicator (see Stage 7 indicator dictionary).</li>
+        <li>Not based on real entities. All data is synthetic, generated for this fictional exercise with a documented planted-pattern methodology, validated separately from the analyst-facing dataset.</li>
+      </ul>
+
+      <h2>QA Report &mdash; Pre-Publication Checks</h2>
+      <div id="qaReport"></div>
+
+      <h2>Remaining Limitations</h2>
+      <ul>
+        <li>Case C (value/weight set) cannot be closed without external product-specialist input &mdash; outside this dataset's scope.</li>
+        <li>Cases A/B cannot be confirmed or refuted as to cause without external corporate-registry data &mdash; outside this dataset's scope by design.</li>
+        <li>Declared-relationship provenance (regulatory_filing vs. self-reported) is not differentially weighted in the current scoring framework &mdash; a known gap.</li>
+        <li>Small-n sub-strata (Corporate segment, several corridor cells) limit confidence at that granularity throughout the project.</li>
+        <li>This is a fictional, synthetic dataset. No finding should be read as a statement about any real entity, individual, or organisation.</li>
+      </ul>
+    </section>
+  </main>
+</div>
+
+<script>
+/* ============================================================
+   VALIDATED SUMMARY DATA (Stage 4-9 outputs only).
+   No connection to raw transactions/payments/shipments tables.
+   ============================================================ */
+
+const corridorData = [
+  {c:"Corridor_E", rate:18.0}, {c:"Corridor_C", rate:16.9}, {c:"Corridor_A", rate:16.4},
+  {c:"Corridor_F", rate:15.5}, {c:"Corridor_D", rate:15.2}, {c:"Corridor_B", rate:15.0},
+];
+const productData = [
+  {c:"electronics_consumer", rate:20.3}, {c:"electronics_components", rate:19.9},
+  {c:"textiles_finished", rate:17.6}, {c:"automotive_parts", rate:17.5},
+  {c:"footwear", rate:17.4}, {c:"textiles_raw", rate:16.6}, {c:"chemicals_generic", rate:16.6},
+  {c:"packaging", rate:15.8},
+];
+const segmentData = [
+  {segment:"SME", n:3910, median:39416, alert:16.45, claim:2.94},
+  {segment:"Mid-market", n:1738, median:31340, alert:15.59, claim:3.45},
+  {segment:"Corporate", n:352, median:30903, alert:13.07, claim:1.42},
+];
+
+const priorityCases = [
+  {id:"Case A", subjects:"CUST00135 + CPTY00002/45/148/156", indicators:"IND01, IND02, IND03+04", score:"9/10", band:"high",
+   evidence:"100% alert rate (38/38, p=5.7e-31); 100% txn/value exclusivity; STRONG entity-resolution cluster",
+   innocent:"Exclusive distributor/agency arrangement with related corporate family",
+   decision:"Escalate to EDD review"},
+  {id:"Case B", subjects:"CUST00070 + CPTY00073/141/218/220", indicators:"IND01, IND02, IND03+04", score:"9/10", band:"high",
+   evidence:"100% alert rate (37/37, p=3.6e-30); 100% txn/value exclusivity; STRONG entity-resolution cluster",
+   innocent:"Same as Case A; declared relationship here is lower-provenance (self-reported)",
+   decision:"Escalate to EDD review"},
+  {id:"Case C", subjects:"85-txn value/weight stable set (67 cust, 73 cpty)", indicators:"IND06", score:"2/10 (capped)", band:"data",
+   evidence:"Stable under 3 detection methods; alert rate 38.8% vs 15.7% baseline, holds across every stratum tested; DQ/confound explanations ruled out",
+   innocent:"Ordinary within-category value variance (premium vs standard goods)",
+   decision:"Requires further data (product-specialist review)"},
+  {id:"Case D1", subjects:"TXN0004921 (CUST00117/CPTY00137)", indicators:"IND06, IND08", score:"3/10", band:"medium",
+   evidence:"Furniture, \u00a32.52M, value/weight flagged + claim with prior alert (low severity, paid)",
+   innocent:"Wide legitimate value range in furniture category; claim reason is a standard commercial event",
+   decision:"Continue monitoring"},
+  {id:"Case D2", subjects:"TXN0003415 (CUST00104/CPTY00185)", indicators:"IND06, IND07", score:"3/10", band:"medium",
+   evidence:"Bulk food commodity, \u00a39,512.77; third-party payer + value/weight flag",
+   innocent:"Ordinary bulk commodity profile; alert is circular with the TP-payer field itself",
+   decision:"Close as likely benign / data-quality artifact"},
+];
+
+const indicatorBreakdown = [
+  {case:"Case A", ind01:3, ind0234:6},
+  {case:"Case B", ind01:3, ind0234:6},
+  {case:"Case C", ind01:0, ind0234:2},
+];
+
+const claimRegister = [
+  {id:"CL-A", statement:"CUST00135/CL001 should be prioritised for EDD review", confidence:"High (statistical) / Low (cause)", status:"carry", statusLabel:"Carry forward"},
+  {id:"CL-B", statement:"CUST00070/CL002 should be prioritised for EDD review", confidence:"High (statistical) / Low (cause)", status:"carry", statusLabel:"Carry forward"},
+  {id:"CL-C", statement:"Case C value/weight set requires further data", confidence:"Medium, confounds ruled out", status:"more", statusLabel:"Requires more data"},
+  {id:"CL-D", statement:"Third-party payer should not be over-weighted", confidence:"High (circularity confirmed)", status:"capped", statusLabel:"Carry forward (capped)"},
+  {id:"CL-E", statement:"Claim/prior-alert relationship is descriptive, not causal", confidence:"Strong descriptive (portfolio, SME, Mid-market)", status:"carry", statusLabel:"Carry forward"},
+  {id:"CL-F", statement:"INTM00038 should be cleared as ordinary hub", confidence:"High", status:"cleared", statusLabel:"Carry forward (clearance)"},
+  {id:"CL-G", statement:"CL003 duplicate cluster is a data-quality issue, not a lead", confidence:"High", status:"cleared", statusLabel:"Carry forward (clearance)"},
+  {id:"CL-H", statement:"Priority score is a review-ordering tool, not proof", confidence:"High (framework design)", status:"carry", statusLabel:"Carry forward"},
+];
+
+const erSummary = [
+  {cls:"STRONG", n:27, desc:"Shared bank account + \u22651 independent attribute (address/declared/name)"},
+  {cls:"MEDIUM", n:24, desc:"Shared bank account only, OR declared relationship only"},
+  {cls:"WEAK", n:13, desc:"Address or name similarity only"},
+];
+
+const evidenceGaps = [
+  {caseId:"Case A", gap:"No independent corporate-registry data on CL001 ownership", category:"Intelligence gap"},
+  {caseId:"Case A", gap:"No contractual documentation for CUST00135's exclusivity", category:"Intelligence gap"},
+  {caseId:"Case B", gap:"Declared relationship is self-reported, not independently filed", category:"Intelligence gap"},
+  {caseId:"Case C", gap:"No product-specialist review of value/weight plausibility yet", category:"Intelligence gap"},
+  {caseId:"Case C", gap:"Alert-type circularity partially tested (70% of alerts share a related type)", category:"Analytical gap \u2013 addressable now"},
+  {caseId:"Case D1", gap:"No goods-description/grade documentation available", category:"Intelligence gap"},
+  {caseId:"INTM00038", gap:"None identified \u2013 assessment considered complete", category:"None outstanding"},
+];
+
+const dqIssues = [
+  {id:"DQ0007", desc:"Shared bank_account_hash across 17 counterparty groups", severity:"Critical"},
+  {id:"DQ0010", desc:"Naive join transactions\u00d7transaction_intermediaries\u00d7payments inflates rows 1.87x", severity:"Critical"},
+  {id:"DQ0001", desc:"61 shipments with arrival_date < departure_date", severity:"High"},
+  {id:"DQ0002", desc:"35 payments predating transaction_date", severity:"High"},
+  {id:"DQ0005", desc:"20 near-duplicate counterparty names (suffix variation)", severity:"High"},
+  {id:"DQ0006", desc:"47 counterparty rows sharing a registered_address", severity:"High"},
+  {id:"DQ0003", desc:"122 shipments missing arrival_date", severity:"Medium"},
+  {id:"DQ0004", desc:"96 non-GB counterparties missing registration_number", severity:"Medium"},
+  {id:"DQ0008", desc:"INTM00038 handles 66.5% of linked-transaction volume", severity:"Medium"},
+  {id:"DQ0009", desc:"Alerts only ever attach at transaction level (coverage gap)", severity:"Medium"},
+  {id:"DQ0011", desc:"120 split-shipment + 30 zero-shipment transactions", severity:"Medium"},
+  {id:"DQ0012", desc:"900 transactions with partial (2-3 leg) payments", severity:"Low"},
+];
+
+/* ============================================================
+   RENDER FUNCTIONS
+   ============================================================ */
+function bar(container, data, keyLabel, keyVal, maxVal, colorClass){
+  const el = document.getElementById(container);
+  el.innerHTML = data.map(d=>{
+    const w = (d[keyVal]/maxVal*100).toFixed(1);
+    return `<div class="bar-row"><div class="bar-label">${d[keyLabel]}</div>
+      <div class="bar-track"><div class="bar-fill ${colorClass||''}" style="width:${w}%"></div></div>
+      <div class="bar-val">${d[keyVal]}%</div></div>`;
+  }).join('');
+}
+bar('corridorBars', corridorData, 'c', 'rate', 20);
+bar('productBars', productData, 'c', 'rate', 22);
+
+document.getElementById('segmentTable').innerHTML = `
+  <tr><th>Segment</th><th>N txns</th><th>Median value</th><th>Alert rate</th><th>Claim rate</th></tr>
+  ${segmentData.map(s=>`<tr><td>${s.segment}</td><td class="mono">${s.n.toLocaleString()}</td>
+    <td class="mono">\u00a3${s.median.toLocaleString()}</td><td>${s.alert}%</td><td>${s.claim}%</td></tr>`).join('')}
+`;
+
+function bandBadge(band){
+  const map = {high:['high','High priority for review'], medium:['medium','Medium priority'],
+    data:['data','Requires more data'], cleared:['cleared','Cleared']};
+  const [cls,label] = map[band];
+  return `<span class="badge ${cls}">${label}</span>`;
+}
+
+document.getElementById('priorityTable').innerHTML = `
+  <tr><th>Case</th><th>Subjects</th><th>Indicators</th><th>Score</th><th>Band</th><th>Evidence summary</th><th>Innocent explanation</th><th>Decision</th></tr>
+  ${priorityCases.map(c=>`<tr>
+    <td class="mono">${c.id}</td><td>${c.subjects}</td><td class="mono">${c.indicators}</td>
+    <td class="mono">${c.score}</td><td>${bandBadge(c.band)}</td>
+    <td style="font-size:12px;">${c.evidence}</td><td style="font-size:12px;">${c.innocent}</td>
+    <td style="font-size:12px;"><strong>${c.decision}</strong></td></tr>`).join('')}
+`;
+
+document.getElementById('indicatorBars').innerHTML = indicatorBreakdown.map(d=>`
+  <div style="margin-bottom:10px;">
+    <div style="font-size:12px;color:var(--slate);margin-bottom:3px;">${d.case}</div>
+    <div style="display:flex;height:16px;width:100%;max-width:500px;border-radius:2px;overflow:hidden;">
+      <div style="background:var(--amber);width:${d.ind01*10}%;" title="IND01 alert concentration: ${d.ind01} pts"></div>
+      <div style="background:var(--sage);width:${d.ind0234*10}%;" title="IND02/03/04 exclusivity+entity-resolution: ${d.ind0234} pts"></div>
+    </div>
+  </div>
+`).join('') + `<p class="footnote">Amber = IND01 (alert concentration, capped 3). Sage = IND02+IND03/04 combined (exclusivity + entity-resolution, capped 6). No single indicator can push a case into High band alone.</p>`;
+
+const caseDetailHTML = priorityCases.map(c=>`
+  <h2>${c.id} &mdash; ${c.subjects}</h2>
+  <p><strong>Priority band:</strong> ${bandBadge(c.band)} &nbsp; <strong>Decision:</strong> ${c.decision}</p>
+  <div class="evidence-pair">
+    <div class="col"><h4>Evidence supporting review priority</h4>${c.evidence}</div>
+    <div class="col"><h4>Plausible innocent explanation</h4>${c.innocent}</div>
+  </div>
+`).join('<hr style="border:none;border-top:1px solid var(--line);margin:28px 0;">');
+document.getElementById('caseDetails').innerHTML = caseDetailHTML;
+
+document.getElementById('claimTable').innerHTML = `
+  <tr><th>Claim</th><th>Statement</th><th>Confidence</th><th>Status</th></tr>
+  ${claimRegister.map(c=>`<tr><td class="mono">${c.id}</td><td style="font-size:12.5px;">${c.statement}</td>
+    <td style="font-size:12px;">${c.confidence}</td><td><span class="badge ${c.status}">${c.statusLabel}</span></td></tr>`).join('')}
+`;
+document.getElementById('erTable').innerHTML = `
+  <tr><th>Classification</th><th>N pairs</th><th>Definition</th></tr>
+  ${erSummary.map(e=>`<tr><td><span class="badge ${e.cls==='STRONG'?'high':(e.cls==='MEDIUM'?'medium':'data')}">${e.cls}</span></td>
+    <td class="mono">${e.n}</td><td style="font-size:12.5px;">${e.desc}</td></tr>`).join('')}
+`;
+document.getElementById('gapTable').innerHTML = `
+  <tr><th>Case</th><th>Gap</th><th>Category</th></tr>
+  ${evidenceGaps.map(g=>`<tr><td class="mono">${g.caseId}</td><td style="font-size:12.5px;">${g.gap}</td>
+    <td><span class="badge ${g.category.startsWith('None')?'cleared':(g.category.startsWith('Analytical')?'medium':'data')}">${g.category}</span></td></tr>`).join('')}
+`;
+document.getElementById('dqTable').innerHTML = `
+  <tr><th>Issue</th><th>Description</th><th>Severity</th></tr>
+  ${dqIssues.map(d=>`<tr><td class="mono">${d.id}</td><td style="font-size:12.5px;">${d.desc}</td>
+    <td><span class="badge ${d.severity==='Critical'?'high':(d.severity==='High'?'high':(d.severity==='Medium'?'medium':'cleared'))}">${d.severity}</span></td></tr>`).join('')}
+`;
+
+const qaChecks = [
+  "No visual connects directly to transactions/payments/shipments tables \u2014 all data sourced from Stage 4-9 validated CSV/register outputs.",
+  "Banned-vocabulary scan passed: no accusatory or determination-of-wrongdoing language (offense-related labels, unqualified suspicion, or claims of confirmation) appears anywhere in this file, including this QA report itself.",
+  "Every scored visual (Priority Cases, Case Detail, Indicator Contribution) displays its evidence and plausible-innocent-explanation text on the same view, per CL-H.",
+  "Case C's specialist-review requirement is visible on the Priority Cases table (band = \u2018Requires more data\u2019) without drilling into Case Detail.",
+  "INTM00038 is shown as an explicit clearance card on the Network page \u2014 not omitted \u2014 with its own evidence pair.",
+  "Priority score never appears alone: every score in Priority Cases and Case Detail is paired with subjects, evidence, and innocent-explanation columns.",
+  "CL003 duplicate cluster kept out of the Priority Cases table entirely; appears only in Evidence Gaps / Claim-Control (CL-G) as a clearance.",
+  "Filters/tabs cannot hide the 5 fixed case rows (A, B, C, D1, D2) \u2014 no dynamic filtering implemented on this static build, so no accidental suppression is possible."
+];
+document.getElementById('qaReport').innerHTML = qaChecks.map(q=>`<div class="qa-item"><span class="qa-check">&#10003;</span><span>${q}</span></div>`).join('');
+
+/* --- Tab navigation --- */
+document.querySelectorAll('.tab').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.page).classList.add('active');
+  });
+});
+</script>
+</body>
+</html>
+

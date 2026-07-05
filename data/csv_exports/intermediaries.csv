@@ -1,0 +1,46 @@
+intermediary_id,legal_name,role_type,country,first_seen_date,contact_email
+INTM00001,Marlow Global FZE,payment_processor,KE,2018-10-21,ops1@intermediary1.com
+INTM00002,Harborview Exports FZE,freight_forwarder,GH,2020-01-31,ops2@intermediary2.com
+INTM00003,Highgate Overseas FZE,payment_processor,DE,2021-06-16,ops3@intermediary3.com
+INTM00004,Harborview Supplies Co,freight_forwarder,IE,2023-02-15,ops4@intermediary4.com
+INTM00005,Fenwick Imports Inc,agent,IT,2018-02-19,ops5@intermediary5.com
+INTM00006,Silverline Distribution SA,payment_processor,ES,2024-02-23,ops6@intermediary6.com
+INTM00007,Larkspur Overseas SA,freight_forwarder,NL,2022-03-03,ops7@intermediary7.com
+INTM00008,Copperfield Supplies FZE,payment_processor,QA,2023-08-14,ops8@intermediary8.com
+INTM00009,Copperfield Holdings Pte Ltd,agent,GH,2023-12-21,ops9@intermediary9.com
+INTM00010,Stonebridge Textiles SA,correspondent_bank,QA,2018-12-26,ops10@intermediary10.com
+INTM00011,Copperfield Logistics LLC,freight_forwarder,QA,2018-08-08,ops11@intermediary11.com
+INTM00012,Stonebridge Overseas Sdn Bhd,agent,NG,2022-12-26,ops12@intermediary12.com
+INTM00013,Ashford Global GmbH,agent,GH,2019-03-17,ops13@intermediary13.com
+INTM00014,Sable Logistics FZE,agent,QA,2018-12-13,ops14@intermediary14.com
+INTM00015,Copperfield Distribution LLP,freight_forwarder,GB,2021-01-03,ops15@intermediary15.com
+INTM00016,Sable Holdings FZE,freight_forwarder,VN,2023-11-11,ops16@intermediary16.com
+INTM00017,Redwood Supplies GmbH,correspondent_bank,DE,2023-02-08,ops17@intermediary17.com
+INTM00018,Wintercroft Manufacturing LLC,freight_forwarder,NG,2021-04-28,ops18@intermediary18.com
+INTM00019,Brightwater Holdings SA,correspondent_bank,JP,2019-04-06,ops19@intermediary19.com
+INTM00020,Northfield Overseas Inc,payment_processor,MY,2020-02-28,ops20@intermediary20.com
+INTM00021,Elmsworth Group LLC,freight_forwarder,IE,2022-06-02,ops21@intermediary21.com
+INTM00022,Copperfield Holdings SA,freight_forwarder,PL,2019-01-04,ops22@intermediary22.com
+INTM00023,Marlow Exports FZE,agent,IE,2021-05-14,ops23@intermediary23.com
+INTM00024,Kestrel Group LLC,freight_forwarder,ES,2018-01-28,ops24@intermediary24.com
+INTM00025,Blue Anchor Freight Inc,agent,IT,2020-02-01,ops25@intermediary25.com
+INTM00026,Highgate Manufacturing GmbH,agent,IN,2019-08-05,ops26@intermediary26.com
+INTM00027,Northfield Commodities LLC,agent,KR,2022-05-16,ops27@intermediary27.com
+INTM00028,Stonebridge Group Pte Ltd,freight_forwarder,US,2023-11-13,ops28@intermediary28.com
+INTM00029,Kestrel Commodities Co,agent,CA,2018-12-10,ops29@intermediary29.com
+INTM00030,Brightwater Group Sdn Bhd,agent,BR,2023-02-12,ops30@intermediary30.com
+INTM00031,Westbrook Exports Pte Ltd,freight_forwarder,CA,2022-03-18,ops31@intermediary31.com
+INTM00032,Wintercroft Industries Inc,agent,GH,2024-03-23,ops32@intermediary32.com
+INTM00033,Thornfield Overseas LLC,correspondent_bank,KR,2023-11-07,ops33@intermediary33.com
+INTM00034,Marlow Commodities Sdn Bhd,agent,PL,2018-08-25,ops34@intermediary34.com
+INTM00035,Harborview Freight Sdn Bhd,agent,NL,2022-10-09,ops35@intermediary35.com
+INTM00036,Amber Group GmbH,freight_forwarder,MY,2021-10-20,ops36@intermediary36.com
+INTM00037,Brightwater Textiles GmbH,freight_forwarder,KR,2018-09-23,ops37@intermediary37.com
+INTM00038,Silverline Commodities Sdn Bhd,freight_forwarder,VN,2019-08-26,ops38@intermediary38.com
+INTM00039,Crestline Freight Ltd,freight_forwarder,GB,2023-12-13,ops39@intermediary39.com
+INTM00040,Rosewood Holdings LLC,payment_processor,IN,2021-06-26,ops40@intermediary40.com
+INTM00041,Copperfield Distribution Sdn Bhd,freight_forwarder,CA,2020-03-04,ops41@intermediary41.com
+INTM00042,Brightwater Group Sdn Bhd,correspondent_bank,GH,2020-01-22,ops42@intermediary42.com
+INTM00043,Ashford Freight Pte Ltd,freight_forwarder,VN,2023-05-18,ops43@intermediary43.com
+INTM00044,Vantage Overseas FZE,freight_forwarder,IE,2019-10-27,ops44@intermediary44.com
+INTM00045,Elmsworth Textiles SA,freight_forwarder,MY,2019-01-08,ops45@intermediary45.com

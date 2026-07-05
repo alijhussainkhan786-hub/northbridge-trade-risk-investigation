@@ -1,0 +1,31 @@
+country_id,country_name,region,corridor_group
+DE,Germany,Europe,Corridor_A
+FR,France,Europe,Corridor_A
+NL,Netherlands,Europe,Corridor_A
+IE,Ireland,Europe,Corridor_A
+IT,Italy,Europe,Corridor_A
+ES,Spain,Europe,Corridor_A
+GB,United Kingdom,Europe,Corridor_B
+AE,United Arab Emirates,Middle East,Corridor_C
+SA,Saudi Arabia,Middle East,Corridor_C
+QA,Qatar,Middle East,Corridor_C
+SG,Singapore,Southeast Asia,Corridor_D
+MY,Malaysia,Southeast Asia,Corridor_D
+VN,Vietnam,Southeast Asia,Corridor_D
+TH,Thailand,Southeast Asia,Corridor_D
+NG,Nigeria,Sub-Saharan Africa,Corridor_E
+KE,Kenya,Sub-Saharan Africa,Corridor_E
+GH,Ghana,Sub-Saharan Africa,Corridor_E
+US,United States,Other,Corridor_F
+CA,Canada,Other,Corridor_F
+BR,Brazil,Other,Corridor_F
+AU,Australia,Other,Corridor_F
+PL,Poland,Europe,Corridor_F
+PT,Portugal,Europe,Corridor_F
+TR,Turkey,Other,Corridor_F
+EG,Egypt,Other,Corridor_F
+ZA,South Africa,Sub-Saharan Africa,Corridor_F
+IN,India,Other,Corridor_F
+CN,China,Other,Corridor_F
+JP,Japan,Other,Corridor_F
+KR,South Korea,Other,Corridor_F

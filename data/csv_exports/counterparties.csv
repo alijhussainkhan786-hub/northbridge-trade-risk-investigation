@@ -1,0 +1,261 @@
+counterparty_id,legal_name,registration_number,country,entity_type,first_seen_date,registered_address,contact_email,contact_phone,bank_account_hash
+CPTY00001,Larkspur Imports LLC,,VN,supplier,2020-03-05,"Unit 13, Commerce Blvd, VN",info1@cpty1.com,+55 677 2905,5776114e7987e437
+CPTY00002,Fenwick Trading Co,CN301231,AE,supplier,2023-08-13,"Unit 7, Sheikh Zayed Business Centre, AE",info2@cpty2.com,+74 836 7106,4483d72271277d60
+CPTY00003,Copperfield Freight Sdn Bhd,,JP,supplier,2024-07-26,"Unit 7, Commerce Blvd, JP",info3@cpty3.com,+49 277 1304,d9ee03a230852584
+CPTY00004,Copperfield Overseas Pte Ltd,CN492386,CN,buyer,2022-03-31,"Unit 10, Harbour Rd, CN",info4@cpty4.com,+62 714 7952,67ad1c6e2e3d4755
+CPTY00005,Coldwell Overseas Inc,,QA,buyer,2022-07-27,"Unit 46, Free Trade Ave, QA",info5@cpty5.com,+94 547 8461,07e4b99f89092023
+CPTY00006,Northfield Holdings Pte Ltd,ZA932465,ZA,supplier,2022-05-16,"Unit 25, Industrial Zone, ZA",info6@cpty6.com,+71 349 8605,0d5f99bf5553a1ef
+CPTY00007,Delta Logistics Sdn Bhd,JP743722,JP,supplier,2020-05-23,"Unit 48, Industrial Zone, JP",info7@cpty7.com,+6 638 9462,67ba6cace492fc0e
+CPTY00008,Stonebridge Commodities FZE,KR915311,KR,agent,2022-12-11,"Unit 10, Harbour Rd, KR",info8@cpty8.com,+65 942 1505,60923a7d1a56002b
+CPTY00009,Fenwick Logistics Pte Ltd,,DE,supplier,2023-06-06,"Unit 4, Commerce Blvd, DE",info9@cpty9.com,+53 801 6780,65caad21d107174f
+CPTY00010,Ironwood Manufacturing SA,PT944397,PT,supplier,2024-05-29,"Unit 31, Free Trade Ave, PT",info10@cpty10.com,+87 515 7142,9620af22ff0220a0
+CPTY00011,Westbrook Holdings LLC,KR475527,KR,buyer,2024-06-02,"Unit 25, Industrial Zone, KR",info11@cpty11.com,+42 884 2074,54949d804f40b794
+CPTY00012,Amber Trading LLC,PT737968,PT,buyer,2022-05-03,"Unit 4, Harbour Rd, PT",info12@cpty12.com,+25 186 7318,b13d4c6330996782
+CPTY00013,Oakbridge Manufacturing LLP,UK75680268,GB,buyer,2024-07-22,"Unit 9, Commerce Blvd, GB",info13@cpty13.com,+23 385 8528,a6010319624fdc39
+CPTY00014,Falcon Distribution Inc,PT750461,PT,supplier,2022-07-06,"Unit 25, Harbour Rd, PT",info14@cpty14.com,+36 231 1188,b9294334b7bc6013
+CPTY00015,Silverline Holdings Co,IE380992,IE,supplier,2023-01-19,"Unit 7, Harbour Rd, IE",info15@cpty15.com,+23 922 5936,98115fdb592cc208
+CPTY00016,Blue Anchor Exports Inc,NG972996,NG,buyer,2022-11-11,"Unit 9, Free Trade Ave, NG",info16@cpty16.com,+98 293 4162,d8cf516dd56281ea
+CPTY00017,Brightwater Holdings Co,CA297621,CA,supplier,2024-09-29,"Unit 30, Commerce Blvd, CA",info17@cpty17.com,+16 458 6069,429d6c49b6388a7c
+CPTY00018,Brightwater Trading Pte Ltd,TH188117,TH,buyer,2023-07-04,"Unit 11, Commerce Blvd, TH",info18@cpty18.com,+80 430 7943,f4b6ce5f8281063c
+CPTY00019,Oakbridge Exports GmbH,AU873604,AU,buyer,2020-07-27,"Unit 10, Commerce Blvd, AU",info19@cpty19.com,+62 362 9208,443722b284a52b28
+CPTY00020,Ironwood Logistics Pte Ltd,,AE,buyer,2020-05-04,"Unit 29, Harbour Rd, AE",info20@cpty20.com,+43 235 9663,7dff5fb955e6e53e
+CPTY00021,Westbrook Trading FZE,CA211690,CA,buyer,2021-12-12,"Unit 13, Industrial Zone, CA",info21@cpty21.com,+90 144 9121,8e54c54aa8ef9dbe
+CPTY00022,Wintercroft Textiles Sdn Bhd,BR723633,BR,supplier,2022-06-14,"Unit 27, Industrial Zone, BR",info22@cpty22.com,+93 845 3294,cfcbf0824b730292
+CPTY00023,Oakbridge Textiles Sdn Bhd,,BR,buyer,2023-03-06,"Unit 33, Harbour Rd, BR",info23@cpty23.com,+62 583 6580,bac545e64cad8a5e
+CPTY00024,Fenwick Logistics LLC,,SA,supplier,2022-04-16,"Unit 16, Industrial Zone, SA",info24@cpty24.com,+61 674 5625,8621da6d56a69adc
+CPTY00025,Crestline Distribution Inc,QA779033,QA,supplier,2022-06-12,"Unit 37, Industrial Zone, QA",info25@cpty25.com,+68 573 1148,850e6e7bcec3dc0f
+CPTY00026,Silverline Commodities Pte Ltd,,AE,buyer,2024-05-19,"Unit 14, Industrial Zone, AE",info26@cpty26.com,+4 961 9182,d07644d9c66bcd06
+CPTY00027,Amber Overseas LLC,TH861128,TH,buyer,2021-08-04,"Unit 16, Commerce Blvd, TH",info27@cpty27.com,+58 256 8032,2b0d3617e3ac6029
+CPTY00028,Fenwick Freight Pte Ltd,US820863,US,supplier,2022-05-06,"Unit 47, Free Trade Ave, US",info28@cpty28.com,+15 439 3968,8a9795e24f33d1fc
+CPTY00029,Harborview Supplies GmbH,,SG,buyer,2022-08-25,"Unit 32, Free Trade Ave, SG",info29@cpty29.com,+2 825 5587,7799c52f367a168c
+CPTY00030,Coldwell Overseas Inc,VN896582,VN,supplier,2022-03-24,"Unit 14, Industrial Zone, VN",info30@cpty30.com,+31 555 1000,1eaf53a03f04e5a5
+CPTY00031,Wintercroft Trading Co,,SA,buyer,2024-08-07,"Unit 10, Harbour Rd, SA",info31@cpty31.com,+43 567 4057,29a7fcc8a22d0fab
+CPTY00032,Westbrook Textiles LLP,UK21942869,GB,supplier,2024-07-28,"Unit 3, Harbour Rd, GB",info32@cpty32.com,+82 324 2240,e012601d70687145
+CPTY00033,Northfield Trading LLC,,BR,supplier,2022-06-09,"Unit 15, Industrial Zone, BR",info33@cpty33.com,+52 897 4377,5fbb4ddaae459d68
+CPTY00034,Ironwood Distribution Sdn Bhd,EG496969,EG,buyer,2022-02-21,"Unit 27, Harbour Rd, EG",info34@cpty34.com,+5 971 4998,2a7dc25cf393f38a
+CPTY00035,Northfield Logistics Inc,,SA,buyer,2022-10-19,"Unit 21, Industrial Zone, SA",info35@cpty35.com,+17 653 3876,29b484cb55736a40
+CPTY00036,Thornfield Group LLC,ZA375519,ZA,agent,2020-11-10,"Unit 19, Free Trade Ave, ZA",info36@cpty36.com,+92 364 5950,efbc06433181cc9a
+CPTY00037,Greystone Industries GmbH,,US,buyer,2022-01-09,"Unit 32, Free Trade Ave, US",info37@cpty37.com,+54 317 5493,aadd307ed69b46e0
+CPTY00038,Crestline Global Sdn Bhd,,ES,buyer,2021-01-11,"Unit 1, Free Trade Ave, ES",info38@cpty38.com,+11 678 7824,17d515650ac22887
+CPTY00039,Ashford Overseas Sdn Bhd,SG510892,SG,buyer,2020-09-07,"Unit 38, Commerce Blvd, SG",info39@cpty39.com,+94 392 3566,efb49a6a736ab456
+CPTY00040,Ashford Commodities Sdn Bhd,DE862196,DE,buyer,2020-06-14,"Unit 26, Industrial Zone, DE",info40@cpty40.com,+54 722 9931,5bb7ececb85dee02
+CPTY00041,Thornfield Textiles GmbH,,FR,supplier,2022-10-16,"Unit 30, Harbour Rd, FR",info41@cpty41.com,+3 314 3361,314a24f5dd5ddf03
+CPTY00042,Sable Holdings Co,,SG,supplier,2020-01-01,"Unit 26, Commerce Blvd, SG",info42@cpty42.com,+26 516 8855,4950b3b7342004c7
+CPTY00043,Silverline Holdings Co,,TH,buyer,2023-01-26,"Unit 21, Industrial Zone, TH",info43@cpty43.com,+4 833 6558,71548674c6781236
+CPTY00044,Redwood Exports GmbH,TR804537,TR,supplier,2022-01-19,"Unit 16, Industrial Zone, TR",info44@cpty44.com,+61 709 2038,1e69401b78a94a0b
+CPTY00045,Brightwater Commodities Co,IT322409,AE,buyer,2021-09-28,"Unit 7, Sheikh Zayed Business Centre, AE",info45@cpty45.com,+74 323 5648,4483d72271277d60
+CPTY00046,Thornfield Freight Inc,ZA356326,ZA,buyer,2023-08-28,"Unit 25, Harbour Rd, ZA",info46@cpty46.com,+67 642 3907,9ed838548eee8544
+CPTY00047,Vantage Group GmbH,AE984792,AE,supplier,2022-07-24,"Unit 49, Harbour Rd, AE",info47@cpty47.com,+39 528 1371,c8597b7886a8bfd4
+CPTY00048,Brightwater Textiles SA,IT138111,IT,agent,2023-06-27,"Unit 48, Harbour Rd, IT",info48@cpty48.com,+72 189 5126,367fb84505e7d2d1
+CPTY00049,Redwood Overseas FZE,,AU,buyer,2023-05-16,"Unit 39, Free Trade Ave, AU",info49@cpty49.com,+65 172 9959,b4d6a6f5a54a7f14
+CPTY00050,Elmsworth Textiles Inc,TR271063,TR,buyer,2020-02-25,"Unit 1, Industrial Zone, TR",info50@cpty50.com,+37 114 6927,b7f3134ecd2717fc
+CPTY00051,Rosewood Trading GmbH,CA507256,CA,buyer,2021-01-09,"Unit 26, Free Trade Ave, CA",info51@cpty51.com,+55 675 7758,657ed75a832367ad
+CPTY00052,Marlow Freight SA,IE236173,IE,supplier,2022-09-16,"Unit 48, Free Trade Ave, IE",info52@cpty52.com,+47 843 4330,847bcab0bf598fe0
+CPTY00053,Coldwell Imports Sdn Bhd,,IE,buyer,2024-08-20,"Unit 24, Industrial Zone, IE",info53@cpty53.com,+54 242 6578,62a7d5fb2d13a173
+CPTY00054,Greystone Distribution Sdn Bhd,MY146549,MY,buyer,2020-09-24,"Unit 49, Free Trade Ave, MY",info54@cpty54.com,+26 726 8208,d372d789fbb70456
+CPTY00055,Sable Holdings Co,TH141271,TH,supplier,2020-07-02,"Unit 5, Harbour Rd, TH",info55@cpty55.com,+85 935 2100,e41c0bfaab1ef420
+CPTY00056,Larkspur Freight Inc,KR481289,KR,buyer,2024-06-21,"Unit 36, Harbour Rd, KR",info56@cpty56.com,+14 932 4427,3ec23ab52912469a
+CPTY00057,Redwood Commodities Sdn Bhd,SA976555,SA,buyer,2024-08-05,"Unit 13, Commerce Blvd, SA",info57@cpty57.com,+3 358 8524,bfb20da8d889d889
+CPTY00058,Elmsworth Manufacturing Sdn Bhd,ES554090,ES,buyer,2020-10-17,"Unit 9, Free Trade Ave, ES",info58@cpty58.com,+35 168 7498,a5e33400b62546ca
+CPTY00059,Ironwood Commodities SA,,JP,buyer,2021-11-28,"Unit 21, Commerce Blvd, JP",info59@cpty59.com,+20 417 1035,c3bb221e0b5f8f84
+CPTY00060,Amber Manufacturing Pte Ltd,IT396275,IT,buyer,2022-12-23,"Unit 27, Commerce Blvd, IT",info60@cpty60.com,+59 500 8802,3d9486a1cd126805
+CPTY00061,Redwood Global Pte Ltd,,DE,supplier,2020-12-04,"Unit 48, Harbour Rd, DE",info61@cpty61.com,+33 283 2493,54066626ee4c8c9f
+CPTY00062,Blue Anchor Freight GmbH,,VN,supplier,2021-07-20,"Unit 15, Free Trade Ave, VN",info62@cpty62.com,+20 505 1784,4cd6cda37c107906
+CPTY00063,Blue Anchor Commodities FZE,,VN,supplier,2021-11-17,"Unit 20, Harbour Rd, VN",info63@cpty63.com,+40 868 7908,26a89cc645be71bd
+CPTY00064,Fenwick Industries Co,,CA,agent,2023-01-18,"Unit 34, Harbour Rd, CA",info64@cpty64.com,+63 902 8021,3b95839f9f24c7a9
+CPTY00065,Vantage Holdings FZE,,IN,buyer,2021-06-18,"Unit 34, Harbour Rd, IN",info65@cpty65.com,+64 875 2119,82f2e557048983e9
+CPTY00066,Falcon Manufacturing Inc,,CN,buyer,2021-12-16,"Unit 18, Free Trade Ave, CN",info66@cpty66.com,+81 365 7596,80276936841d9a9b
+CPTY00067,Stonebridge Exports Pte Ltd,SA745075,SA,supplier,2021-05-17,"Unit 33, Free Trade Ave, SA",info67@cpty67.com,+90 545 1798,a4ff7da1dd60712e
+CPTY00068,Fenwick Holdings Co,KR150134,KR,buyer,2023-08-11,"Unit 29, Free Trade Ave, KR",info68@cpty68.com,+37 465 9429,bf25372c2282ffa2
+CPTY00069,Sable Logistics GmbH,CA292447,CA,supplier,2020-09-22,"Unit 22, Free Trade Ave, CA",info69@cpty69.com,+93 611 9555,0c0ec789c047a3f8
+CPTY00070,Northfield Industries Co,,NL,supplier,2021-02-04,"Unit 28, Free Trade Ave, NL",info70@cpty70.com,+43 469 8527,24d0930359fcd099
+CPTY00071,Ashford Distribution Co,,JP,buyer,2021-03-09,"Unit 47, Industrial Zone, JP",info71@cpty71.com,+66 569 5110,fb330090ebfb7f8b
+CPTY00072,Rosewood Freight LLC,IT409585,IT,buyer,2024-04-21,"Unit 7, Free Trade Ave, IT",info72@cpty72.com,+70 777 5414,0fb289d9c3d9bd47
+CPTY00073,Sable Supplies GmbH,US826248,SG,buyer,2024-06-27,"Level 3, Marina Commercial Tower, SG",info73@cpty73.com,+4 191 2297,7ae5d5f7340ad976
+CPTY00074,Elmsworth Trading GmbH,TR474280,TR,buyer,2022-05-18,"Unit 35, Harbour Rd, TR",info74@cpty74.com,+46 652 8233,8904b5d6f6f0e17e
+CPTY00075,Ashford Global SA,,AE,buyer,2020-09-28,"Unit 49, Harbour Rd, AE",info75@cpty75.com,+23 807 6993,bd1bfd8660b92e91
+CPTY00076,Sable Manufacturing LLC,SA246570,SA,buyer,2023-08-05,"Unit 41, Harbour Rd, SA",info76@cpty76.com,+6 415 3723,8717ec2334cb2c20
+CPTY00077,Meridian Freight SA,,NG,supplier,2022-05-04,"Unit 23, Harbour Rd, NG",info77@cpty77.com,+87 928 8372,a459b9da4e29b3a6
+CPTY00078,Crestline Holdings FZE,,IN,supplier,2024-01-15,"Unit 4, Commerce Blvd, IN",info78@cpty78.com,+52 543 3803,5288491ccd43917a
+CPTY00079,Brightwater Overseas Limited,UK64462326,GB,supplier,2021-09-16,"Unit 13, Free Trade Ave, GB",info79@cpty79.com,+76 177 3439,9faa1c4e5be7982f
+CPTY00080,Ironwood Trading GmbH,,BR,buyer,2024-09-29,"Unit 2, Commerce Blvd, BR",info80@cpty80.com,+14 544 3697,f5740f2942082934
+CPTY00081,Falcon Global Pte Ltd,,TH,buyer,2023-11-01,"Unit 12, Commerce Blvd, TH",info81@cpty81.com,+20 438 8747,4583278ce64c47c3
+CPTY00082,Wintercroft Supplies Co,,IE,buyer,2021-01-23,"Unit 2, Free Trade Ave, IE",info82@cpty82.com,+55 839 9224,1b60c79106f57abc
+CPTY00083,Vantage Holdings GmbH,PL273647,PL,buyer,2023-06-13,"Unit 21, Free Trade Ave, PL",info83@cpty83.com,+89 415 8896,bd19d6afe6fd5a04
+CPTY00084,Ashford Commodities SA,,EG,supplier,2021-05-13,"Unit 17, Free Trade Ave, EG",info84@cpty84.com,+90 962 4158,28f67aca73fc20a4
+CPTY00085,Crestline Imports Inc,,US,buyer,2021-08-30,"Unit 30, Industrial Zone, US",info85@cpty85.com,+23 625 9385,e6685ba388a05cf8
+CPTY00086,Crestline Exports FZE,,ES,buyer,2021-03-10,"Unit 15, Commerce Blvd, ES",info86@cpty86.com,+89 613 2343,b7abeb5ac8420e9c
+CPTY00087,Delta Overseas Co,IT416079,IT,supplier,2023-03-30,"Unit 46, Industrial Zone, IT",info87@cpty87.com,+42 741 6042,3984a289684ebe44
+CPTY00088,Blue Anchor Global Inc,VN553796,VN,buyer,2021-04-01,"Unit 46, Free Trade Ave, VN",info88@cpty88.com,+34 407 1537,a1ae4e7ead3cfe7d
+CPTY00089,Rosewood Holdings FZE,KE161203,KE,buyer,2023-01-13,"Unit 38, Harbour Rd, KE",info89@cpty89.com,+29 701 3171,40e6a888d16e6ccb
+CPTY00090,Sable Manufacturing Co,GH859844,GH,buyer,2022-10-08,"Unit 9, Free Trade Ave, GH",info90@cpty90.com,+98 174 6298,23ea2d3540e88c94
+CPTY00091,Wintercroft Manufacturing Pte Ltd,AE742844,AE,supplier,2023-07-27,"Unit 40, Commerce Blvd, AE",info91@cpty91.com,+49 849 8988,cf02ff7c1a0f3ef5
+CPTY00092,Northfield Textiles Sdn Bhd,KE377613,KE,supplier,2024-09-20,"Unit 25, Industrial Zone, KE",info92@cpty92.com,+54 666 7289,6221e409dc0fdd22
+CPTY00093,Greystone Exports Sdn Bhd,SA500947,SA,buyer,2020-01-16,"Unit 38, Industrial Zone, SA",info93@cpty93.com,+52 266 4856,3c22a7a74d30f822
+CPTY00094,Harborview Manufacturing SA,AU183943,AU,supplier,2024-09-15,"Unit 7, Industrial Zone, AU",info94@cpty94.com,+24 517 6535,66ae73a3f2e82aec
+CPTY00095,Elmsworth Industries GmbH,TR765290,TR,supplier,2020-07-08,"Unit 40, Commerce Blvd, TR",info95@cpty95.com,+21 324 8405,3da0d45dc99834a6
+CPTY00096,Sable Imports Co,BR642168,BR,supplier,2022-07-03,"Unit 18, Industrial Zone, BR",info96@cpty96.com,+38 278 7417,70b58b01de80516c
+CPTY00097,Vantage Textiles Sdn Bhd,,DE,buyer,2021-08-14,"Unit 48, Free Trade Ave, DE",info97@cpty97.com,+71 842 7839,005f7b9bdc3c7386
+CPTY00098,Northfield Textiles Co,,KR,buyer,2023-01-14,"Unit 33, Free Trade Ave, KR",info98@cpty98.com,+98 616 3581,0d52b3da02b8194b
+CPTY00099,Falcon Overseas Inc,,DE,supplier,2023-06-06,"Unit 48, Free Trade Ave, DE",info99@cpty99.com,+85 338 3619,493f0ec11f8aa286
+CPTY00100,Blue Anchor Commodities SA,KR143448,KR,buyer,2024-02-01,"Unit 44, Industrial Zone, KR",info100@cpty100.com,+82 892 4053,4eec86d672b61e3b
+CPTY00101,Redwood Industries Inc,DE343306,DE,supplier,2021-11-28,"Unit 45, Free Trade Ave, DE",info101@cpty101.com,+72 929 8187,9e4eb0adf4cdaf97
+CPTY00102,Ashford Trading Co,,KE,supplier,2024-06-07,"Unit 37, Harbour Rd, KE",info102@cpty102.com,+1 697 2528,ef3430ac5350ae7c
+CPTY00103,Fenwick Exports Sdn Bhd,IE520953,IE,buyer,2021-07-13,"Unit 13, Free Trade Ave, IE",info103@cpty103.com,+83 160 9936,259c06caede0dd3e
+CPTY00104,Ironwood Industries GmbH,,NL,supplier,2020-12-19,"Unit 25, Commerce Blvd, NL",info104@cpty104.com,+18 477 3106,afb1c05a5e822a49
+CPTY00105,Crestline Distribution SA,AU416736,AU,supplier,2021-10-20,"Unit 28, Free Trade Ave, AU",info105@cpty105.com,+80 453 7700,5b391dd37f8ff8a0
+CPTY00106,Northfield Freight Inc,PL968543,PL,supplier,2022-07-06,"Unit 13, Harbour Rd, PL",info106@cpty106.com,+7 507 9198,48071d7e915aaa2e
+CPTY00107,Copperfield Logistics LLC,IE972793,IE,buyer,2023-03-05,"Unit 25, Commerce Blvd, IE",info107@cpty107.com,+91 287 4549,78b40358bd3352d4
+CPTY00108,Marlow Imports Co,KR249412,KR,supplier,2023-12-16,"Unit 7, Commerce Blvd, KR",info108@cpty108.com,+41 608 5835,94ccbbda1180c0fb
+CPTY00109,Fenwick Supplies FZE,,QA,buyer,2021-01-25,"Unit 26, Industrial Zone, QA",info109@cpty109.com,+11 785 3031,8cc71f067c5f39a8
+CPTY00110,Ironwood Logistics GmbH,QA836403,QA,supplier,2021-06-10,"Unit 16, Free Trade Ave, QA",info110@cpty110.com,+31 855 7206,2794645226ff80bd
+CPTY00111,Silverline Exports Pte Ltd,SA946055,SA,supplier,2024-06-17,"Unit 6, Free Trade Ave, SA",info111@cpty111.com,+39 920 4546,73f6f5a31705d116
+CPTY00112,Silverline Textiles GmbH,TH607475,TH,supplier,2022-02-02,"Unit 13, Industrial Zone, TH",info112@cpty112.com,+56 321 2648,694d52f3788a8f45
+CPTY00113,Thornfield Logistics Sdn Bhd,ES262574,ES,buyer,2021-02-23,"Unit 40, Industrial Zone, ES",info113@cpty113.com,+49 606 8251,028ad5ff542819d9
+CPTY00114,Oakbridge Holdings Sdn Bhd,VN160774,VN,buyer,2024-09-07,"Unit 15, Free Trade Ave, VN",info114@cpty114.com,+39 904 6465,7c3e4f9d83d7c002
+CPTY00115,Elmsworth Overseas Ltd,UK16283089,GB,buyer,2022-02-18,"Unit 33, Free Trade Ave, GB",info115@cpty115.com,+7 764 6172,01a9de3a91967e33
+CPTY00116,Marlow Distribution Co,FR206809,FR,buyer,2024-09-06,"Unit 13, Commerce Blvd, FR",info116@cpty116.com,+39 520 3715,f5e627f0607179f4
+CPTY00117,Wintercroft Supplies SA,,MY,buyer,2024-05-14,"Unit 13, Free Trade Ave, MY",info117@cpty117.com,+61 609 5025,109b88987d656acb
+CPTY00118,Amber Imports FZE,AU400103,AU,supplier,2024-04-22,"Unit 36, Free Trade Ave, AU",info118@cpty118.com,+28 458 5480,254c88ec8ee666f9
+CPTY00119,Coldwell Freight LLC,,PT,buyer,2022-10-07,"Unit 22, Harbour Rd, PT",info119@cpty119.com,+47 378 6237,c85d867868d63403
+CPTY00120,Oakbridge Manufacturing Pte Ltd,SG193736,SG,supplier,2023-10-18,"Unit 38, Free Trade Ave, SG",info120@cpty120.com,+23 550 2093,f7c17dff8c89462b
+CPTY00121,Elmsworth Exports Co,QA331471,QA,supplier,2024-07-25,"Unit 24, Commerce Blvd, QA",info121@cpty121.com,+47 804 8359,f3a52819c429f8a5
+CPTY00122,Highgate Trading FZE,,TR,buyer,2021-04-12,"Unit 46, Commerce Blvd, TR",info122@cpty122.com,+69 770 1593,683c4a6bd5b32887
+CPTY00123,Larkspur Manufacturing Pte Ltd,AU202617,AU,supplier,2020-03-06,"Unit 33, Commerce Blvd, AU",info123@cpty123.com,+34 688 8204,3ccb47f438594265
+CPTY00124,Fenwick Supplies Sdn Bhd,,EG,supplier,2021-07-10,"Unit 16, Free Trade Ave, EG",info124@cpty124.com,+58 867 3457,6d3f9610d1a25d38
+CPTY00125,Ashford Commodities Co,CN763685,CN,buyer,2023-01-10,"Unit 21, Free Trade Ave, CN",info125@cpty125.com,+16 177 6243,b3e0ce5039999e7b
+CPTY00126,Stonebridge Holdings Co,EG271040,EG,buyer,2022-08-08,"Unit 43, Free Trade Ave, EG",info126@cpty126.com,+66 356 8052,d6281ac044f65b96
+CPTY00127,Northfield Commodities LLC,JP651181,JP,supplier,2020-05-19,"Unit 4, Harbour Rd, JP",info127@cpty127.com,+73 423 3148,dfc36bd24e70c767
+CPTY00128,Meridian Holdings Co,VN134876,VN,agent,2022-08-31,"Unit 6, Free Trade Ave, VN",info128@cpty128.com,+73 703 2536,aac00dd4471823be
+CPTY00129,Crestline Industries GmbH,MY501157,MY,supplier,2020-10-29,"Unit 5, Commerce Blvd, MY",info129@cpty129.com,+26 536 5599,4e08c28787ba8e6a
+CPTY00130,Blue Anchor Supplies Inc,QA954865,QA,supplier,2022-05-27,"Unit 20, Commerce Blvd, QA",info130@cpty130.com,+17 952 4497,f7e60bf5be86cfec
+CPTY00131,Marlow Industries Sdn Bhd,,AE,agent,2022-09-26,"Unit 42, Free Trade Ave, AE",info131@cpty131.com,+38 154 8880,173ab514a379129e
+CPTY00132,Falcon Imports Co,PT882454,PT,buyer,2023-01-10,"Unit 27, Free Trade Ave, PT",info132@cpty132.com,+24 987 5463,e85a1fc8a0aa4a4a
+CPTY00133,Ashford Logistics Co,,PL,supplier,2021-12-17,"Unit 15, Free Trade Ave, PL",info133@cpty133.com,+86 261 2492,95c4803760fd8c56
+CPTY00134,Kestrel Commodities Inc,,EG,buyer,2021-12-09,"Unit 19, Harbour Rd, EG",info134@cpty134.com,+79 836 5887,1b5364d7272cd608
+CPTY00135,Silverline Exports Pte Ltd,,ES,agent,2023-03-24,"Unit 19, Harbour Rd, ES",info135@cpty135.com,+4 948 4539,016f2718242204b8
+CPTY00136,Silverline Global FZE,NG335706,NG,buyer,2023-07-24,"Unit 17, Free Trade Ave, NG",info136@cpty136.com,+92 882 8662,23ff3aee631b5771
+CPTY00137,Blue Anchor Industries LLP,UK32003068,GB,buyer,2023-11-03,"Unit 17, Harbour Rd, GB",info137@cpty137.com,+68 705 5794,11e4a7168acf4356
+CPTY00138,Northfield Industries GmbH,IN580514,IN,supplier,2021-08-02,"Unit 1, Free Trade Ave, IN",info138@cpty138.com,+3 448 7574,d1c254c60df3fbcb
+CPTY00139,Greystone Textiles Co,SA339091,SA,buyer,2022-01-06,"Unit 48, Free Trade Ave, SA",info139@cpty139.com,+80 603 7385,f770d8c4cccf06ea
+CPTY00140,Copperfield Holdings Pte Ltd,IT569781,IT,supplier,2021-07-28,"Unit 45, Commerce Blvd, IT",info140@cpty140.com,+3 521 5569,68ee1a83405c6cfc
+CPTY00141,Thornfield Distribution FZE,,SG,buyer,2022-07-04,"Level 3, Marina Commercial Tower, SG",info141@cpty141.com,+88 379 3069,7ae5d5f7340ad976
+CPTY00142,Sable Group Pte Ltd,IN584770,IN,agent,2020-08-08,"Unit 49, Commerce Blvd, IN",info142@cpty142.com,+35 253 6025,58f734328ae1fdad
+CPTY00143,Delta Freight GmbH,,CN,supplier,2022-01-16,"Unit 23, Free Trade Ave, CN",info143@cpty143.com,+63 820 9746,23f504f8e616f9b4
+CPTY00144,Thornfield Supplies FZE,,NL,buyer,2020-11-23,"Unit 28, Harbour Rd, NL",info144@cpty144.com,+8 322 3706,836112bd4f1e92db
+CPTY00145,Elmsworth Imports SA,QA776366,QA,supplier,2022-07-13,"Unit 4, Harbour Rd, QA",info145@cpty145.com,+25 843 2255,aaf7c3e986ba7479
+CPTY00146,Stonebridge Exports Sdn Bhd,IT638356,IT,buyer,2024-01-16,"Unit 31, Commerce Blvd, IT",info146@cpty146.com,+3 873 9652,d01649890c3b2cc8
+CPTY00147,Ironwood Holdings Sdn Bhd,QA651194,QA,supplier,2024-09-06,"Unit 29, Commerce Blvd, QA",info147@cpty147.com,+23 399 5528,85fbc8e8960e8143
+CPTY00148,Kestrel Freight FZE,GH140377,AE,supplier,2022-02-13,"Unit 7, Sheikh Zayed Business Centre, AE",info148@cpty148.com,+52 990 4636,4483d72271277d60
+CPTY00149,Vantage Textiles LLC,,SA,supplier,2020-04-07,"Unit 28, Industrial Zone, SA",info149@cpty149.com,+2 480 6007,ddf6fbb8c0decabe
+CPTY00150,Larkspur Textiles GmbH,NL874310,NL,buyer,2021-01-30,"Unit 24, Free Trade Ave, NL",info150@cpty150.com,+51 560 9302,b799044d4c897576
+CPTY00151,Falcon Industries Sdn Bhd,,KE,buyer,2020-06-30,"Unit 44, Free Trade Ave, KE",info151@cpty151.com,+80 326 4197,ef37c2282ec78060
+CPTY00152,Silverline Supplies Inc,FR378479,FR,supplier,2023-08-11,"Unit 11, Harbour Rd, FR",info152@cpty152.com,+66 468 4855,1c288b384dd6683a
+CPTY00153,Copperfield Textiles Ltd,UK18422464,GB,supplier,2024-09-05,"Unit 25, Commerce Blvd, GB",info153@cpty153.com,+17 328 7666,490af80d84bcc7e9
+CPTY00154,Redwood Logistics Inc,DE174940,DE,buyer,2022-08-19,"Unit 10, Free Trade Ave, DE",info154@cpty154.com,+83 805 3770,f9f04ea77cb95c38
+CPTY00155,Oakbridge Commodities Co,NL363080,NL,buyer,2020-11-03,"Unit 9, Harbour Rd, NL",info155@cpty155.com,+14 243 4540,baf7662455dba6a4
+CPTY00156,Greystone Overseas Sdn Bhd,TH293187,AE,buyer,2020-02-06,"Unit 7, Sheikh Zayed Business Centre, AE",info156@cpty156.com,+51 902 9088,4483d72271277d60
+CPTY00157,Fenwick Distribution Co,,ZA,supplier,2024-08-21,"Unit 15, Industrial Zone, ZA",info157@cpty157.com,+1 736 3688,9a5b48c3e7f6d2f0
+CPTY00158,Wintercroft Global LLC,,TR,buyer,2021-07-03,"Unit 36, Commerce Blvd, TR",info158@cpty158.com,+20 598 1305,18dacbd835e4316b
+CPTY00159,Harborview Manufacturing LLC,NL104371,NL,buyer,2020-07-13,"Unit 49, Commerce Blvd, NL",info159@cpty159.com,+33 596 3448,52871feb81043483
+CPTY00160,Amber Logistics Co,FR289821,FR,supplier,2020-11-03,"Unit 24, Industrial Zone, FR",info160@cpty160.com,+59 513 8193,fde7ffb5668aa2a1
+CPTY00161,Ashford Logistics FZE,SG537440,SG,buyer,2021-03-19,"Unit 5, Free Trade Ave, SG",info161@cpty161.com,+18 151 5766,b98890d96bed5b82
+CPTY00162,Crestline Manufacturing Pte Ltd,BR604167,BR,supplier,2023-02-12,"Unit 22, Free Trade Ave, BR",info162@cpty162.com,+26 735 1839,756d99446c50e94d
+CPTY00163,Sable Overseas GmbH,PT638350,PT,buyer,2024-03-28,"Unit 31, Commerce Blvd, PT",info163@cpty163.com,+57 989 1837,c4b0465cec34baea
+CPTY00164,Highgate Distribution Inc,,EG,supplier,2021-04-22,"Unit 20, Free Trade Ave, EG",info164@cpty164.com,+30 859 5801,a348674da92c6622
+CPTY00165,Oakbridge Exports Inc,,SG,supplier,2023-04-08,"Unit 38, Free Trade Ave, SG",info165@cpty165.com,+18 291 7882,fe6a95a5441c2f13
+CPTY00166,Rosewood Distribution SA,,ES,supplier,2020-04-22,"Unit 14, Industrial Zone, ES",info166@cpty166.com,+85 424 5264,ca7c81fa14fac2db
+CPTY00167,Rosewood Distribution Co,DE842069,DE,buyer,2020-01-18,"Unit 25, Harbour Rd, DE",info167@cpty167.com,+77 259 2856,35eaecd79bc9aa04
+CPTY00168,Northfield Freight LLC,,IT,buyer,2020-04-05,"Unit 46, Commerce Blvd, IT",info168@cpty168.com,+76 267 7936,b12801d8a1c2f47e
+CPTY00169,Blue Anchor Exports FZE,FR160280,FR,supplier,2024-05-21,"Unit 37, Industrial Zone, FR",info169@cpty169.com,+49 990 1296,5df1f8a242c15295
+CPTY00170,Coldwell Imports GmbH,,ZA,buyer,2022-10-06,"Unit 20, Commerce Blvd, ZA",info170@cpty170.com,+93 302 1315,185806d1fe8a929a
+CPTY00171,Thornfield Holdings Sdn Bhd,,SA,buyer,2023-10-29,"Unit 6, Industrial Zone, SA",info171@cpty171.com,+71 578 8535,6c01012473f9a6ef
+CPTY00172,Redwood Group LLC,EG478455,EG,buyer,2020-02-07,"Unit 25, Commerce Blvd, EG",info172@cpty172.com,+11 172 6104,775176dd3490d643
+CPTY00173,Delta Imports FZE,GH622393,GH,agent,2020-02-08,"Unit 16, Commerce Blvd, GH",info173@cpty173.com,+87 464 8176,c867a60540e8d746
+CPTY00174,Copperfield Commodities FZE,,GH,supplier,2024-01-13,"Unit 37, Free Trade Ave, GH",info174@cpty174.com,+89 881 5577,20fb72887fbff88a
+CPTY00175,Highgate Logistics SA,TH289460,TH,supplier,2020-06-27,"Unit 43, Commerce Blvd, TH",info175@cpty175.com,+69 572 7066,9a9c33f74470ef9b
+CPTY00176,Crestline Imports Inc,EG432614,EG,supplier,2020-09-26,"Unit 33, Industrial Zone, EG",info176@cpty176.com,+56 572 4930,bbf5faae3c84aecc
+CPTY00177,Oakbridge Group SA,,FR,buyer,2022-06-19,"Unit 35, Industrial Zone, FR",info177@cpty177.com,+64 775 9271,e59db62999020d49
+CPTY00178,Sable Logistics SA,NL953538,NL,buyer,2022-11-18,"Unit 15, Industrial Zone, NL",info178@cpty178.com,+61 190 6286,d8004c42f52f961c
+CPTY00179,Thornfield Group FZE,,VN,buyer,2021-02-01,"Unit 36, Commerce Blvd, VN",info179@cpty179.com,+31 124 1652,8922dd10e9e035ac
+CPTY00180,Greystone Textiles GmbH,MY876292,MY,supplier,2022-02-10,"Unit 4, Industrial Zone, MY",info180@cpty180.com,+58 949 5549,d21bb4ea10494c95
+CPTY00181,Brightwater Exports GmbH,,GH,buyer,2023-03-17,"Unit 44, Industrial Zone, GH",info181@cpty181.com,+44 179 7077,8186a70e5c87a2cb
+CPTY00182,Meridian Exports Co,PT761487,PT,supplier,2022-02-07,"Unit 12, Free Trade Ave, PT",info182@cpty182.com,+6 856 8346,70a6c629420ecaa9
+CPTY00183,Ironwood Commodities Co,US593445,US,supplier,2021-10-26,"Unit 14, Commerce Blvd, US",info183@cpty183.com,+98 355 2455,aacb7824f7edc7dc
+CPTY00184,Blue Anchor Exports GmbH,AE125218,AE,buyer,2020-05-04,"Unit 25, Commerce Blvd, AE",info184@cpty184.com,+30 818 2969,15cef28977129cfb
+CPTY00185,Brightwater Supplies Sdn Bhd,,QA,supplier,2022-02-23,"Unit 49, Harbour Rd, QA",info185@cpty185.com,+87 238 1439,882976f1ee5deed7
+CPTY00186,Elmsworth Textiles SA,,PT,buyer,2023-10-25,"Unit 41, Free Trade Ave, PT",info186@cpty186.com,+22 777 6419,9ee88942b1e9304d
+CPTY00187,Marlow Overseas Ltd,UK52988388,GB,agent,2022-12-24,"Unit 5, Commerce Blvd, GB",info187@cpty187.com,+35 689 6836,0d6741a1916ea959
+CPTY00188,Larkspur Distribution GmbH,KE926765,KE,supplier,2024-03-30,"Unit 34, Commerce Blvd, KE",info188@cpty188.com,+55 562 1913,4c80a9949a293262
+CPTY00189,Ashford Manufacturing Co,GH336985,GH,supplier,2020-08-07,"Unit 4, Free Trade Ave, GH",info189@cpty189.com,+26 574 2216,0e83f9d674e77d62
+CPTY00190,Meridian Exports Sdn Bhd,PT338344,PT,buyer,2020-01-20,"Unit 23, Free Trade Ave, PT",info190@cpty190.com,+47 205 8084,e5e73332aeda8260
+CPTY00191,Wintercroft Commodities Sdn Bhd,,PL,buyer,2022-08-09,"Unit 17, Commerce Blvd, PL",info191@cpty191.com,+11 183 6739,7e625e58d01ed360
+CPTY00192,Larkspur Trading Inc,TH325767,TH,buyer,2020-11-06,"Unit 2, Industrial Zone, TH",info192@cpty192.com,+22 415 3828,13af9af1ce1e881a
+CPTY00193,Greystone Industries SA,QA290781,QA,buyer,2022-10-28,"Unit 30, Harbour Rd, QA",info193@cpty193.com,+22 784 7226,51109ce8a68f71b8
+CPTY00194,Stonebridge Group Co,MY220407,MY,buyer,2024-04-18,"Unit 48, Commerce Blvd, MY",info194@cpty194.com,+24 717 7420,2135a0ff2d294ab4
+CPTY00195,Coldwell Imports SA,,VN,buyer,2021-08-08,"Unit 22, Industrial Zone, VN",info195@cpty195.com,+53 619 9413,153936352202449f
+CPTY00196,Silverline Holdings LLP,UK61361925,GB,agent,2022-08-11,"Unit 1, Industrial Zone, GB",info196@cpty196.com,+45 446 5850,5e0ddd6036c7b5b3
+CPTY00197,Copperfield Commodities Pte Ltd,CA142525,CA,buyer,2023-03-29,"Unit 9, Commerce Blvd, CA",info197@cpty197.com,+82 737 1676,017a704355c68bd6
+CPTY00198,Ironwood Distribution LLP,UK34258793,GB,buyer,2020-09-17,"Unit 3, Free Trade Ave, GB",info198@cpty198.com,+46 765 3015,2898c73e8c9b92b2
+CPTY00199,Westbrook Supplies Co,,BR,supplier,2024-04-06,"Unit 37, Commerce Blvd, BR",info199@cpty199.com,+97 826 8618,8bdf9f3fb159df20
+CPTY00200,Larkspur Freight GmbH,PT632918,PT,supplier,2020-12-18,"Unit 42, Free Trade Ave, PT",info200@cpty200.com,+9 621 5749,13a49941d8b411fc
+CPTY00201,Coldwell Distribution Inc,,JP,supplier,2023-11-04,"Unit 16, Harbour Rd, JP",info201@cpty201.com,+62 864 4179,48168d48725fa151
+CPTY00202,Vantage Exports LLC,IE974027,IE,supplier,2023-02-19,"Unit 13, Free Trade Ave, IE",info202@cpty202.com,+53 710 7777,d2ff14d4c404df0f
+CPTY00203,Stonebridge Exports Sdn Bhd,,PT,supplier,2020-09-01,"Unit 10, Free Trade Ave, PT",info203@cpty203.com,+76 402 9983,7395080ed1d7697c
+CPTY00204,Fenwick Overseas GmbH,NL599729,NL,supplier,2023-06-12,"Unit 11, Commerce Blvd, NL",info204@cpty204.com,+1 542 6478,19e5d6f33767b297
+CPTY00205,Stonebridge Freight FZE,SG521067,SG,buyer,2020-12-07,"Unit 44, Free Trade Ave, SG",info205@cpty205.com,+7 505 6362,ac89fcd495436f38
+CPTY00206,Vantage Logistics Pte Ltd,,ES,supplier,2022-11-06,"Unit 40, Harbour Rd, ES",info206@cpty206.com,+60 207 3497,e8b086fafecc63ac
+CPTY00207,Copperfield Textiles SA,,IT,buyer,2024-07-24,"Unit 28, Commerce Blvd, IT",info207@cpty207.com,+24 675 3958,5ce3774d2cb9bc10
+CPTY00208,Oakbridge Supplies SA,ES396806,ES,buyer,2024-07-12,"Unit 27, Harbour Rd, ES",info208@cpty208.com,+57 757 8174,0dcc85348c390b25
+CPTY00209,Kestrel Manufacturing LLC,FR549465,FR,buyer,2024-02-21,"Unit 21, Industrial Zone, FR",info209@cpty209.com,+19 912 2491,d6e0c0acab903f4d
+CPTY00210,Blue Anchor Global Inc,EG583693,EG,buyer,2022-05-07,"Unit 18, Industrial Zone, EG",info210@cpty210.com,+3 140 2809,295c2fd5cc6078ab
+CPTY00211,Crestline Commodities FZE,,FR,supplier,2022-08-29,"Unit 48, Harbour Rd, FR",info211@cpty211.com,+86 286 7240,046923b47a7eee89
+CPTY00212,Vantage Commodities Pte Ltd,,MY,buyer,2021-06-05,"Unit 42, Commerce Blvd, MY",info212@cpty212.com,+42 135 4996,f74647dea43ec50c
+CPTY00213,Fenwick Logistics Co,,AU,buyer,2024-05-17,"Unit 5, Industrial Zone, AU",info213@cpty213.com,+3 528 6027,2f19a1d1ac2c564f
+CPTY00214,Larkspur Group FZE,KR854062,KR,buyer,2022-04-08,"Unit 5, Industrial Zone, KR",info214@cpty214.com,+52 353 7898,50b17f10e2e9de73
+CPTY00215,Larkspur Holdings FZE,ZA910249,ZA,supplier,2023-09-01,"Unit 6, Industrial Zone, ZA",info215@cpty215.com,+59 329 4911,1677bbf5fce33176
+CPTY00216,Stonebridge Freight Inc,IT861369,IT,buyer,2021-09-16,"Unit 31, Free Trade Ave, IT",info216@cpty216.com,+11 930 7776,c376405f730bd1fc
+CPTY00217,Brightwater Holdings FZE,KR781613,KR,supplier,2023-07-09,"Unit 44, Harbour Rd, KR",info217@cpty217.com,+29 706 7111,15ef7f59e8201420
+CPTY00218,Vantage Commodities FZE,BR521527,SG,supplier,2021-01-24,"Level 3, Marina Commercial Tower, SG",info218@cpty218.com,+60 148 8905,7ae5d5f7340ad976
+CPTY00219,Redwood Freight FZE,ES727545,ES,buyer,2023-06-27,"Unit 3, Harbour Rd, ES",info219@cpty219.com,+94 975 9825,e368062b315d4081
+CPTY00220,Larkspur Manufacturing Inc,TH471386,SG,supplier,2020-03-20,"Level 3, Marina Commercial Tower, SG",info220@cpty220.com,+92 764 1511,7ae5d5f7340ad976
+CPTY00221,Larkspur Logistics LLC,CN780507,CN,buyer,2020-06-30,"Unit 25, Industrial Zone, CN",info221@cpty221.com,+46 320 2979,9e59d32a4804acd2
+CPTY00222,Coldwell Exports FZE,,MY,buyer,2021-09-03,"Unit 34, Harbour Rd, MY",info222@cpty222.com,+82 830 5698,8c437f3da4d22896
+CPTY00223,Falcon Manufacturing SA,ES854311,ES,supplier,2022-04-16,"Unit 29, Industrial Zone, ES",info223@cpty223.com,+73 216 2997,2430914f350ec93d
+CPTY00224,Northfield Holdings FZE,IN144166,IN,supplier,2023-05-20,"Unit 42, Harbour Rd, IN",info224@cpty224.com,+85 505 5919,147ee2def304e658
+CPTY00225,Ironwood Imports Inc,JP410750,JP,buyer,2021-09-15,"Unit 33, Harbour Rd, JP",info225@cpty225.com,+46 281 8436,d932580b67b5e565
+CPTY00226,Kestrel Overseas Pte Ltd,KR748193,KR,supplier,2020-02-02,"Unit 14, Commerce Blvd, KR",info226@cpty226.com,+75 714 4178,60f990551b401925
+CPTY00227,Amber Logistics FZE,JP952027,JP,buyer,2021-07-18,"Unit 27, Industrial Zone, JP",info227@cpty227.com,+64 956 6847,1b726fdca063c56d
+CPTY00228,Oakbridge Exports Pte Ltd,,IN,supplier,2022-02-01,"Unit 30, Industrial Zone, IN",info228@cpty228.com,+49 343 5704,da8c7209534211d5
+CPTY00229,Vantage Industries FZE,TH345840,TH,supplier,2022-08-01,"Unit 48, Commerce Blvd, TH",info229@cpty229.com,+37 649 1410,fdc752f99592f848
+CPTY00230,Sable Group FZE,ES397901,ES,supplier,2023-01-23,"Unit 5, Free Trade Ave, ES",info230@cpty230.com,+19 807 4426,947f0aa30119e834
+CPTY00231,Redwood Logistics Pte Ltd,,CA,supplier,2021-03-05,"Unit 30, Industrial Zone, CA",info231@cpty231.com,+43 588 4943,7e6907498f0b0f5e
+CPTY00232,Amber Textiles Ltd,UK76061489,GB,buyer,2022-11-25,"Unit 45, Commerce Blvd, GB",info232@cpty232.com,+75 320 7825,9a38bf8451825646
+CPTY00233,Ironwood Industries Pte Ltd,NG964722,NG,supplier,2023-01-01,"Unit 29, Free Trade Ave, NG",info233@cpty233.com,+21 433 6289,aa1e11ee2d334c26
+CPTY00234,Rosewood Freight Co,BR404731,BR,supplier,2023-09-10,"Unit 42, Commerce Blvd, BR",info234@cpty234.com,+87 309 6285,e8b1a7ad69d55005
+CPTY00235,Harborview Manufacturing Inc,JP432963,JP,supplier,2022-06-25,"Unit 26, Free Trade Ave, JP",info235@cpty235.com,+7 167 7906,53ec9129f71fb873
+CPTY00236,Ashford Supplies Pte Ltd,,SA,buyer,2023-11-08,"Unit 19, Commerce Blvd, SA",info236@cpty236.com,+71 438 6606,503845453142c341
+CPTY00237,Brightwater Distribution SA,,AE,buyer,2021-01-19,"Unit 8, Industrial Zone, AE",info237@cpty237.com,+38 349 4881,250b0e5caff83375
+CPTY00238,Meridian Supplies GmbH,PT436044,PT,buyer,2023-05-20,"Unit 19, Harbour Rd, PT",info238@cpty238.com,+31 832 4704,003894050fc90968
+CPTY00239,Elmsworth Exports GmbH,,DE,buyer,2020-03-20,"Unit 47, Industrial Zone, DE",info239@cpty239.com,+32 582 7821,2ccfd2d9d3acb192
+CPTY00240,Ironwood Supplies Inc,,GH,buyer,2020-06-27,"Unit 2, Commerce Blvd, GH",info240@cpty240.com,+27 944 5171,bed48bf8b15e6cbd
+CPTY00241,Sable Exports Inc,PT852746,PT,buyer,2024-02-10,"Unit 38, Commerce Blvd, PT",info241@cpty241.com,+65 960 4884,c3620427ec88475f
+CPTY00242,Amber Imports Inc,,GH,supplier,2022-04-04,"Unit 40, Commerce Blvd, GH",info242@cpty242.com,+20 772 1059,56c1039a8d893ab4
+CPTY00243,Blue Anchor Industries LLC,MY647793,MY,buyer,2022-12-13,"Unit 10, Free Trade Ave, MY",info243@cpty243.com,+45 981 4729,275e77a552fc6f9f
+CPTY00244,Marlow Exports Sdn Bhd,,EG,supplier,2022-11-13,"Unit 48, Commerce Blvd, EG",info244@cpty244.com,+68 572 2931,3f9d09f9f19fdb08
+CPTY00245,Brightwater Exports Sdn Bhd,MY683895,MY,buyer,2023-04-21,"Unit 26, Commerce Blvd, MY",info245@cpty245.com,+32 570 1938,4dc2f0e27402333e
+CPTY00246,Sable Holdings Co (2),TH141271,TH,supplier,2020-07-02,"Unit 5, Harbour Rd, TH",info55@cpty55.com,+85 935 2100,e41c0bfaab1ef420
+CPTY00247,Harborview Supplies GmbH (2),,SG,buyer,2022-08-25,"Unit 32, Free Trade Ave, SG",info29@cpty29.com,+2 825 5587,7799c52f367a168c
+CPTY00248,Westbrook Supplies Co (2),,BR,supplier,2024-04-06,"Unit 37, Commerce Blvd, BR",info199@cpty199.com,+97 826 8618,8bdf9f3fb159df20
+CPTY00249,Fenwick Logistics Pte Limited,,DE,supplier,2023-06-06,"Unit 4, Commerce Blvd, DE",info9@cpty9.com,+53 801 6780,65caad21d107174f
+CPTY00250,Redwood Freight FZE (2),ES727545,ES,buyer,2023-06-27,"Unit 3, Harbour Rd, ES",info219@cpty219.com,+94 975 9825,e368062b315d4081
+CPTY00251,Ironwood Commodities Co (2),US593445,US,supplier,2021-10-26,"Unit 14, Commerce Blvd, US",info183@cpty183.com,+98 355 2455,aacb7824f7edc7dc
+CPTY00252,Rosewood Freight L.L.C.,IT409585,IT,buyer,2024-04-21,"Unit 7, Free Trade Ave, IT",info72@cpty72.com,+70 777 5414,0fb289d9c3d9bd47
+CPTY00253,Ashford Logistics Co (2),,PL,supplier,2021-12-17,"Unit 15, Free Trade Ave, PL",info133@cpty133.com,+86 261 2492,95c4803760fd8c56
+CPTY00254,Vantage Textiles Sdn Bhd (2),,DE,buyer,2021-08-14,"Unit 48, Free Trade Ave, DE",info97@cpty97.com,+71 842 7839,005f7b9bdc3c7386
+CPTY00255,Northfield Holdings FZE (2),IN144166,IN,supplier,2023-05-20,"Unit 42, Harbour Rd, IN",info224@cpty224.com,+85 505 5919,147ee2def304e658
+CPTY00256,Coldwell Imports SA (2),,VN,buyer,2021-08-08,"Unit 22, Industrial Zone, VN",info195@cpty195.com,+53 619 9413,153936352202449f
+CPTY00257,Ashford Supplies Pte Limited,,SA,buyer,2023-11-08,"Unit 19, Commerce Blvd, SA",info236@cpty236.com,+71 438 6606,503845453142c341
+CPTY00258,Silverline Supplies Inc (2),FR378479,FR,supplier,2023-08-11,"Unit 11, Harbour Rd, FR",info152@cpty152.com,+66 468 4855,1c288b384dd6683a
+CPTY00259,Sable Imports Co (2),BR642168,BR,supplier,2022-07-03,"Unit 18, Industrial Zone, BR",info96@cpty96.com,+38 278 7417,70b58b01de80516c
+CPTY00260,Oakbridge Commodities Co (2),NL363080,NL,buyer,2020-11-03,"Unit 9, Harbour Rd, NL",info155@cpty155.com,+14 243 4540,baf7662455dba6a4

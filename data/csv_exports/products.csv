@@ -1,0 +1,19 @@
+product_id,product_category,product_label,hs_code_group,typical_unit_value_min,typical_unit_value_max,typical_weight_min_kg,typical_weight_max_kg
+PROD0001,textiles_finished,Textiles - finished garments,HS61,5.0,45,0.3,2.0
+PROD0002,textiles_raw,Textiles - raw/unfinished fabric,HS52,2.0,15,0.5,3.0
+PROD0003,electronics_components,Electronics - components,HS8541,1.0,120,0.01,5.0
+PROD0004,electronics_consumer,Electronics - consumer goods,HS8517,20.0,400,0.2,3.0
+PROD0005,machinery_parts,Machinery parts,HS8483,10.0,300,1.0,50.0
+PROD0006,machinery_industrial,Industrial machinery,HS8479,500.0,15000,50.0,2000.0
+PROD0007,food_agri,Food & agricultural commodities,HS1006,0.3,3,1.0,1000.0
+PROD0008,beverages,Beverages (non-alcoholic),HS2202,0.5,4,0.5,20.0
+PROD0009,chemicals_generic,Chemicals - generic industrial,HS3824,1.0,25,1.0,500.0
+PROD0010,building_materials,Building materials,HS6810,0.2,8,5.0,2000.0
+PROD0011,furniture,Furniture,HS9403,30.0,900,5.0,80.0
+PROD0012,packaging,Packaging materials,HS4819,0.1,5,1.0,500.0
+PROD0013,automotive_parts,Automotive parts,HS8708,5.0,600,0.2,40.0
+PROD0014,pharma_generic,Pharmaceuticals - generic OTC,HS3004,2.0,60,0.05,1.0
+PROD0015,toys,Toys & consumer leisure,HS9503,2.0,50,0.1,5.0
+PROD0016,footwear,Footwear,HS6403,8.0,90,0.2,1.5
+PROD0017,plastics_raw,Plastics - raw materials,HS3901,0.8,3,1.0,1000.0
+PROD0018,paper_products,Paper products,HS4802,0.3,4,1.0,1000.0

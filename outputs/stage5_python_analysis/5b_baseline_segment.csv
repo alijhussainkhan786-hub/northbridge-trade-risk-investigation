@@ -1,0 +1,4 @@
+segment,n_txn,median_value,q1_value,q3_value,alert_rate,claim_rate,tp_payer_rate,vw_mismatch_rate
+SME,3910,39416.08,6955.64,224345.3,16.45,2.94,2.05,1.41
+Mid-market,1738,31340.36,6250.61,196071.2,15.59,3.45,1.9,1.38
+Corporate,352,30903.16,6879.33,174850.57,13.07,1.42,1.99,1.7

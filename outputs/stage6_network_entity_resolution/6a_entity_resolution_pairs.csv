@@ -1,0 +1,65 @@
+cpty_a,cpty_b,evidence_type,n_independent_evidence_types,evidence_buckets,n_evidence_buckets,classification
+CPTY00006,CPTY00010,['declared_relationship_shared_address'],1,['declared'],1,MEDIUM
+CPTY00007,CPTY00213,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00013,CPTY00219,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00021,CPTY00103,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00023,CPTY00120,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00049,CPTY00128,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00055,CPTY00171,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00073,CPTY00229,['declared_relationship_parent_subsidiary'],1,['declared'],1,MEDIUM
+CPTY00077,CPTY00238,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00091,CPTY00139,['declared_relationship_parent_subsidiary'],1,['declared'],1,MEDIUM
+CPTY00105,CPTY00116,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00112,CPTY00204,['declared_relationship_parent_subsidiary'],1,['declared'],1,MEDIUM
+CPTY00113,CPTY00120,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00121,CPTY00123,['declared_relationship_shared_address'],1,['declared'],1,MEDIUM
+CPTY00126,CPTY00201,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00131,CPTY00231,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00136,CPTY00219,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00138,CPTY00185,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00154,CPTY00184,['declared_relationship_shared_registered_agent'],1,['declared'],1,MEDIUM
+CPTY00156,CPTY00164,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00172,CPTY00179,['declared_relationship_shared_director'],1,['declared'],1,MEDIUM
+CPTY00183,CPTY00188,['declared_relationship_parent_subsidiary'],1,['declared'],1,MEDIUM
+CPTY00183,CPTY00229,['declared_relationship_shared_address'],1,['declared'],1,MEDIUM
+CPTY00249,CPTY00251,['declared_relationship_shared_address'],1,['declared'],1,MEDIUM
+CPTY00002,CPTY00045,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00002,CPTY00148,"['declared_relationship_shared_director', 'shared_address', 'shared_bank_account']",3,"['address', 'bank', 'declared']",3,STRONG
+CPTY00002,CPTY00156,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00009,CPTY00249,"['near_duplicate_name', 'shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",5,"['address', 'bank', 'email', 'name', 'phone']",5,STRONG
+CPTY00029,CPTY00247,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00045,CPTY00148,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00045,CPTY00156,"['declared_relationship_shared_director', 'shared_address', 'shared_bank_account']",3,"['address', 'bank', 'declared']",3,STRONG
+CPTY00055,CPTY00246,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00072,CPTY00252,"['near_duplicate_name', 'shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",5,"['address', 'bank', 'email', 'name', 'phone']",5,STRONG
+CPTY00073,CPTY00141,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00073,CPTY00218,"['declared_relationship_parent_subsidiary', 'shared_address', 'shared_bank_account']",3,"['address', 'bank', 'declared']",3,STRONG
+CPTY00073,CPTY00220,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00096,CPTY00259,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00097,CPTY00254,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00133,CPTY00253,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00141,CPTY00218,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00141,CPTY00220,"['declared_relationship_shared_director', 'shared_address', 'shared_bank_account']",3,"['address', 'bank', 'declared']",3,STRONG
+CPTY00148,CPTY00156,"['declared_relationship_shared_director', 'shared_address', 'shared_bank_account']",3,"['address', 'bank', 'declared']",3,STRONG
+CPTY00152,CPTY00258,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00155,CPTY00260,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00183,CPTY00251,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00195,CPTY00256,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00199,CPTY00248,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00218,CPTY00220,"['shared_address', 'shared_bank_account']",2,"['address', 'bank']",2,STRONG
+CPTY00219,CPTY00250,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00224,CPTY00255,"['shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",4,"['address', 'bank', 'email', 'phone']",4,STRONG
+CPTY00236,CPTY00257,"['near_duplicate_name', 'shared_address', 'shared_bank_account', 'shared_email', 'shared_phone']",5,"['address', 'bank', 'email', 'name', 'phone']",5,STRONG
+CPTY00005,CPTY00030,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00015,CPTY00043,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00042,CPTY00055,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00047,CPTY00075,['shared_address'],1,['address'],1,WEAK
+CPTY00062,CPTY00114,['shared_address'],1,['address'],1,WEAK
+CPTY00085,CPTY00176,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00088,CPTY00210,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00097,CPTY00099,['shared_address'],1,['address'],1,WEAK
+CPTY00099,CPTY00254,['shared_address'],1,['address'],1,WEAK
+CPTY00103,CPTY00202,['shared_address'],1,['address'],1,WEAK
+CPTY00111,CPTY00135,['near_duplicate_name'],1,['name'],1,WEAK
+CPTY00120,CPTY00165,['shared_address'],1,['address'],1,WEAK
+CPTY00146,CPTY00203,['near_duplicate_name'],1,['name'],1,WEAK

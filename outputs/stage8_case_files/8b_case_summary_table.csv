@@ -1,0 +1,7 @@
+case_id,title,subjects,priority_score,band,txn_count,value_exposure_gbp,alert_rate_pct,claim_rate_pct,decision_category
+A,CUST00135 + CL001 cluster,"CUST00135; CPTY00002/45/148/156",9,High,38,14408812,100.0,10.5,Escalate to EDD review
+B,CUST00070 + CPTY00073/141/218/220 cluster,"CUST00070; CPTY00073/141/218/220",9,High,37,13992912,100.0,13.5,Escalate to EDD review
+C,Value/weight stable anomaly set,"67 customers; 73 counterparties (85 txns)",n/a (IND06=2),Medium,85,122275083,38.8,3.5,Requires further data before decision
+D1,TXN0004921 combined-indicator example,"CUST00117; CPTY00137",3,Medium(illustrative),1,2521419,100.0,100.0,Continue monitoring
+D2,TXN0003415 combined-indicator example,"CUST00104; CPTY00185",3,Medium(illustrative),1,9513,100.0,0.0,Close as likely benign / data-quality artifact
+E,INTM00038 hub clearance,INTM00038,0,Cleared,3360,n/a (service breadth not value exposure),16.01,3.04,Close as likely benign
